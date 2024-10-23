@@ -53,26 +53,49 @@ html {
 header {
   position: fixed;
   height: 100px;
+  background: #fff;
 }
 .header-inner {
-  display: flex;
-  justify-content: space-around;
-
+  width: 100%;
   .header-left {
     h1 img {
       width: 160px;
-      padding: 10px 0 0 10px;
+      position: fixed;
+      top: 10px;
+      left: 10px;
     }
   }
 
   .header-right {
-    width: 40%;
+    width: 586px;
+    position: fixed;
+    right: 95px;
+    top: 35px;
     ul {
       display: flex;
       justify-content: space-between;
+
+      li {
+        color: #350b03;
+        font-family: "Noto Serif";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
     }
   }
 }
+
+//top-main
+
+//about
+
+//lineup
+
+//access
+
+//contact
 
 //footer
 footer {
