@@ -25,6 +25,7 @@ a {
 //フォントサイズ
 html {
   color: $text-color;
+  font-family: "Noto Sans JP";
   @include mq(pc) {
     font-size: 16px;
   }
@@ -38,7 +39,15 @@ html {
   }
 }
 
-//font-family
+//nav-font
+@mixin nav-font {
+  color: #350b03;
+  font-family: "Noto Serif";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 //header
 header {
@@ -70,9 +79,15 @@ footer {
   height: 150px;
   position: relative;
   background: $yellow-box;
+
+  .copy-right {
+    text-align: center;
+    font-size: 12px;
+    margin: -20px;
+  }
   .footer-inner {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
 
     .footer-left {
       a img {
@@ -84,10 +99,19 @@ footer {
     }
 
     .footer-right {
-      .footer-access-wrapper {
-        p {
-          font-size: 18px;
-        }
+      width: 25%;
+      margin-top: 10px;
+      height: 135px;
+      p {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        letter-spacing: 4.8px;
+        line-height: 1.5em;
+      }
+
+      .footer-access {
+        margin-bottom: 26px;
       }
     }
   }
