@@ -88,6 +88,43 @@ header {
 }
 
 //top-main
+.top-main {
+  height: 1124px;
+
+  .cola1 {
+    width: 576px;
+    height: auto;
+  }
+
+  .cola2 {
+    width: 848px;
+    height: auto;
+  }
+  .store-img {
+    width: 680px;
+    height: auto;
+  }
+
+  .yellow-box1 {
+    width: 754px;
+    height: 133px;
+    border-radius: 10px;
+    background: #ffee62;
+  }
+  .yellow-box2 {
+    width: 532px;
+    height: 103px;
+    transform: rotate(90deg);
+    border-radius: 10px;
+    background: #ffee62;
+  }
+  .yellow-box3 {
+    width: 699px;
+    height: 278px;
+    border-radius: 10px;
+    background: #ffee62;
+  }
+}
 
 //about
 

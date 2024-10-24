@@ -56,6 +56,41 @@ header {
   line-height: normal;
 }
 
+.top-main {
+  height: 1124px;
+}
+.top-main .cola1 {
+  width: 576px;
+  height: auto;
+}
+.top-main .cola2 {
+  width: 848px;
+  height: auto;
+}
+.top-main .store-img {
+  width: 680px;
+  height: auto;
+}
+.top-main .yellow-box1 {
+  width: 754px;
+  height: 133px;
+  border-radius: 10px;
+  background: #ffee62;
+}
+.top-main .yellow-box2 {
+  width: 532px;
+  height: 103px;
+  transform: rotate(90deg);
+  border-radius: 10px;
+  background: #ffee62;
+}
+.top-main .yellow-box3 {
+  width: 699px;
+  height: 278px;
+  border-radius: 10px;
+  background: #ffee62;
+}
+
 footer {
   height: 150px;
   position: relative;
