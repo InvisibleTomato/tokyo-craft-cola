@@ -1,3 +1,4 @@
+@charset "UTF-8";
 a {
   color: #350b03;
 }
@@ -25,7 +26,7 @@ html {
 header {
   position: fixed;
   height: 100px;
-  background: #fff;
+  z-index: 9999999;
 }
 
 .header-inner {
@@ -58,37 +59,88 @@ header {
 
 .top-main {
   height: 1124px;
+  position: relative;
+  padding-top: 100px;
 }
-.top-main .cola1 {
-  width: 576px;
+.top-main .cola-1 {
+  width: 35%;
   height: auto;
+  position: absolute;
+  top: 10%;
+  left: 0;
 }
-.top-main .cola2 {
-  width: 848px;
+.top-main .cola-2 {
+  width: 65%;
   height: auto;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .top-main .store-img {
-  width: 680px;
+  width: 50%;
   height: auto;
+  position: absolute;
+  right: 75px;
+  top: 301px;
 }
 .top-main .yellow-box1 {
-  width: 754px;
-  height: 133px;
+  width: 60%;
+  height: 10%;
   border-radius: 10px;
   background: #ffee62;
+  overflow: hidden;
+  position: absolute;
+  top: 235px;
+  right: -10px;
 }
 .top-main .yellow-box2 {
-  width: 532px;
-  height: 103px;
+  width: 40%;
+  height: 10%;
   transform: rotate(90deg);
   border-radius: 10px;
   background: #ffee62;
+  overflow: hidden;
+  position: absolute;
+  top: 440px;
+  left: -220px;
 }
 .top-main .yellow-box3 {
-  width: 699px;
-  height: 278px;
+  width: 60%;
+  height: 20%;
   border-radius: 10px;
   background: #ffee62;
+  overflow: hidden;
+  position: absolute;
+  right: -10px;
+  top: 889px;
+}
+.top-main h2 {
+  writing-mode: vertical-rl; /* 縦書きに設定 */
+  color: #350b03;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: nomal;
+  font-family: "Kaisei Tokumin";
+  letter-spacing: 0.4em;
+}
+.top-main .main-title {
+  position: absolute;
+  top: 30%;
+  left: 28%;
+}
+.top-main .main-title2 {
+  position: absolute;
+  top: 55%;
+  left: 20%;
+}
+.top-main .main-title2 span {
+  background-color: #2c459e;
+  color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  padding-top: 30px;
 }
 
 footer {
