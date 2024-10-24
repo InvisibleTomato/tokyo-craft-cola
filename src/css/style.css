@@ -38,23 +38,10 @@ header {
   top: 10px;
   left: 10px;
 }
-.header-inner .header-right {
-  width: 586px;
-  position: fixed;
-  right: 95px;
-  top: 35px;
-}
-.header-inner .header-right ul {
-  display: flex;
-  justify-content: space-between;
-}
-.header-inner .header-right ul li {
-  color: #350b03;
-  font-family: "Noto Serif";
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+@media screen and (max-width: 767px) {
+  .header-inner .header-left h1 img {
+    width: 100px;
+  }
 }
 
 /* ハンバーガーメニュークリック前 */
@@ -70,9 +57,7 @@ header {
 }
 @media screen and (min-width: 768px) {
   .btnHamburger {
-    width: 70px;
-    height: 50px;
-    right: 60px;
+    display: none;
   }
 }
 @media screen and (min-width: 1025px) {
@@ -89,7 +74,7 @@ header {
   display: block;
   width: 40px; /* 横幅 */
   height: 2px; /* 1本辺りの高さ */
-  background: #676262; /* 線の色 */
+  background: #350b03; /* 線の色 */
   /* 適用するプロパティ、変化する時間、変化する速度 */
   /* -webkit-transition: all 0.3s ease-out; */
   transition: 0.3s;
@@ -146,54 +131,26 @@ header {
 
 /* クリック前 */
 nav {
+  width: 50%;
   position: fixed;
-  top: 60px;
-  left: -100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s;
+  right: 95px;
+  top: 35px;
 }
-@media screen and (min-width: 1025px) {
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-  }
+nav ul {
+  display: flex;
+  justify-content: space-between;
 }
 nav ul li {
-  width: 16.6%;
-  text-align: center;
+  color: #350b03;
+  font-family: "Noto Serif";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-nav ul li a {
-  color: #554a45;
-}
-@media screen and (min-width: 768px) {
-  nav ul li a {
-    font-size: 25px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  nav ul li a {
-    display: block;
-    font-size: 20px;
-  }
-}
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 767px) {
   nav {
-    font-size: 25px;
-    margin-top: 200px;
-  }
-}
-@media screen and (min-width: 1025px) {
-  nav {
-    opacity: 1;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    z-index: 1000;
-    line-height: 100px;
-    background: #fff;
-    margin: 0 auto;
-    width: 100%;
+    opacity: 0;
   }
 }
 
@@ -204,43 +161,53 @@ nav ul li a {
   left: 0;
   width: 1px;
   opacity: 0;
-  background: #c6b5b0;
+  background: #ffee62;
   transition: 0.5s;
   z-index: 11;
 }
+@media screen and (max-width: 767px) {
+  #coverlayer .logo-blown {
+    width: 100px;
+    height: auto;
+  }
+}
 
 /* クリック後 */
-nav.is-active {
-  left: 0;
-  opacity: 1;
-  color: #554a45;
-  text-align: center;
-  width: 100%;
-  display: block;
+@media screen and (max-width: 767px) {
+  nav.is-active {
+    z-index: 99;
+    opacity: 1;
+    transition: 0.5s;
+  }
 }
-nav.is-active ul li {
-  padding: 40px 0;
-  width: 100%;
-}
-
-.btnHamburger p {
-  font-size: 8px;
-  margin-top: 5px;
-  color: #000;
-  position: absolute;
-  top: 120%;
-  left: 20%;
-}
-@media screen and (min-width: 768px) {
-  .btnHamburger p {
-    top: 110%;
-    left: 35%;
+@media screen and (max-width: 767px) {
+  nav.is-active ul {
+    display: flex;
+    flex-direction: column; /* 縦方向に並べる */
+    justify-content: center;
+    align-items: center;
+    margin-top: 60%;
+  }
+  nav.is-active ul li {
+    color: #350b03;
+    font-family: "Noto Serif";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 60%; /* 各リストアイテムの間に余白を追加 */
   }
 }
 
 #coverlayer.is-active {
   width: 100%;
   opacity: 1;
+}
+@media screen and (max-width: 767px) {
+  #coverlayer.is-active .logo-blown {
+    width: 100px;
+    height: auto;
+  }
 }
 
 .top-main {

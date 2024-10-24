@@ -68,28 +68,13 @@ header {
       position: fixed;
       top: 10px;
       left: 10px;
-    }
-  }
 
-  .header-right {
-    width: 586px;
-    position: fixed;
-    right: 95px;
-    top: 35px;
-    ul {
-      display: flex;
-      justify-content: space-between;
-
-      li {
-        color: #350b03;
-        font-family: "Noto Serif";
-        font-size: 22px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
+      @include mq(sp) {
+        width: 100px;
       }
     }
   }
+  // pcのnav
 }
 
 //ハンバーガーメニュー
@@ -105,9 +90,7 @@ header {
   cursor: pointer;
 
   @include mq(tab) {
-    width: 70px;
-    height: 50px;
-    right: 60px;
+    display: none;
   }
 
   @include mq(pc) {
@@ -124,7 +107,7 @@ header {
   display: block;
   width: 40px; /* 横幅 */
   height: 2px; /* 1本辺りの高さ */
-  background: #676262; /* 線の色 */
+  background: $text-color; /* 線の色 */
 
   @include mq(tab) {
     width: 70px;
@@ -179,54 +162,29 @@ header {
 }
 
 /* クリック前 */
+
 nav {
+  width: 50%;
   position: fixed;
-  top: 60px;
-  left: -100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s;
+  right: 95px;
+  top: 35px;
 
   ul {
-    @include mq(pc) {
-      display: flex;
-      justify-content: space-around;
-    }
+    display: flex;
+    justify-content: space-between;
 
     li {
-      width: 16.6%;
-      text-align: center;
+      color: $text-color;
+      font-family: "Noto Serif";
+      font-size: 22px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
     }
   }
 
-  ul li a {
-    color: #554a45;
-
-    @include mq(tab) {
-      font-size: 25px;
-    }
-
-    @include mq(pc) {
-      display: block;
-      font-size: 20px;
-    }
-  }
-
-  @include mq(tab) {
-    font-size: 25px;
-    margin-top: 200px;
-  }
-
-  @include mq(pc) {
-    opacity: 1;
-    position: fixed;
-    top: 0%;
-    left: 0%;
-    z-index: 1000;
-    line-height: 100px;
-    background: #fff;
-    margin: 0 auto;
-    width: 100%;
+  @include mq(sp) {
+    opacity: 0;
   }
 }
 
@@ -237,44 +195,59 @@ nav {
   left: 0;
   width: 1px;
   opacity: 0;
-  background: #c6b5b0;
+  background: $yellow-box;
   transition: 0.5s;
   z-index: 11;
+
+  //以下の記述がないとis-activeクラスが外れた際に一瞬だけロゴが大きくなる
+  .logo-blown {
+    @include mq(sp) {
+      width: 100px;
+      height: auto;
+    }
+  }
 }
 
 /* クリック後 */
 
 nav.is-active {
-  left: 0;
-  opacity: 1;
-  color: #554a45;
-  text-align: center;
-  width: 100%;
-  display: block;
-
-  ul li {
-    padding: 40px 0;
-    width: 100%;
+  @include mq(sp) {
+    z-index: 99;
+    opacity: 1;
+    transition: 0.5s;
   }
-}
 
-.btnHamburger p {
-  font-size: 8px;
-  margin-top: 5px;
-  color: #000;
-  position: absolute;
-  top: 120%;
-  left: 20%;
+  ul {
+    @include mq(sp) {
+      display: flex;
+      flex-direction: column; /* 縦方向に並べる */
+      justify-content: center;
+      align-items: center;
+      margin-top: 60%;
 
-  @include mq(tab) {
-    top: 110%;
-    left: 35%;
+      li {
+        color: $text-color;
+        font-family: "Noto Serif";
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 60%; /* 各リストアイテムの間に余白を追加 */
+      }
+    }
   }
 }
 
 #coverlayer.is-active {
   width: 100%;
   opacity: 1;
+
+  .logo-blown {
+    @include mq(sp) {
+      width: 100px;
+      height: auto;
+    }
+  }
 }
 
 //top-main
