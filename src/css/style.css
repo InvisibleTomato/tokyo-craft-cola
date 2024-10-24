@@ -85,20 +85,20 @@ header {
   top: 301px;
 }
 .top-main .yellow-box1 {
-  width: 60%;
+  width: 50%;
   height: 10%;
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
   background: #ffee62;
   overflow: hidden;
   position: absolute;
   top: 235px;
-  right: -10px;
+  right: 0;
 }
 .top-main .yellow-box2 {
   width: 40%;
   height: 10%;
   transform: rotate(90deg);
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   background: #ffee62;
   overflow: hidden;
   position: absolute;
@@ -106,13 +106,13 @@ header {
   left: -220px;
 }
 .top-main .yellow-box3 {
-  width: 60%;
+  width: 40%;
   height: 20%;
-  border-radius: 10px;
+  border-radius: 10px 0 0 10px;
   background: #ffee62;
   overflow: hidden;
   position: absolute;
-  right: -10px;
+  right: 0;
   top: 889px;
 }
 .top-main h2 {
