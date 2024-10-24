@@ -92,6 +92,191 @@ header {
   }
 }
 
+//ハンバーガーメニュー
+/* ハンバーガーメニュークリック前 */
+/* クリックエリアと位置を指定 ---------------------- */
+.btnHamburger {
+  position: fixed;
+  z-index: 10000;
+  top: 40px;
+  right: 40px;
+  width: 40px; /* クリックエリアの横幅*/
+  height: 20px; /* クリックエリアの高さ*/
+  cursor: pointer;
+
+  @include mq(tab) {
+    width: 70px;
+    height: 50px;
+    right: 60px;
+  }
+
+  @include mq(pc) {
+    display: none;
+  }
+}
+
+/* 3本線の1本ごとに共通するスタイルを指定 ---------------------- */
+.btnHamburger .line {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  display: block;
+  width: 40px; /* 横幅 */
+  height: 2px; /* 1本辺りの高さ */
+  background: #676262; /* 線の色 */
+
+  @include mq(tab) {
+    width: 70px;
+    height: 3px;
+  }
+
+  /* 適用するプロパティ、変化する時間、変化する速度 */
+  /* -webkit-transition: all 0.3s ease-out; */
+  transition: 0.3s;
+}
+
+/* 3本線の各線の位置を指定 ---------------------- */
+.btnHamburger .line_01 {
+  top: 0px;
+}
+.btnHamburger .line_02 {
+  top: 8px;
+
+  @include mq(tab) {
+    top: 23px;
+  }
+}
+.btnHamburger .line_03 {
+  top: 16px;
+
+  @include mq(tab) {
+    top: 46px;
+  }
+}
+
+/* ハンバーガーメニュークリック後 */
+.btnHamburger.is-active .line_01 {
+  top: 8px; /* 上から2番目の線の位置に変更 */
+
+  /* 線を45度回転 */
+  /* -webkit-transform: rotate(45deg); */
+  transform: rotate(45deg);
+}
+
+/* 上から2番目の線のスタイル ---------------------- */
+.btnHamburger.is-active .line_02 {
+  opacity: 0; /* 不透明度を下げて線を消す */
+}
+
+/* 最下部の線のスタイル ---------------------- */
+.btnHamburger.is-active .line_03 {
+  top: 8px; /* 上から2番目の線の位置に変更 */
+
+  /* 線を135度回転 */
+  -webkit-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/* クリック前 */
+nav {
+  position: fixed;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s;
+
+  ul {
+    @include mq(pc) {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    li {
+      width: 16.6%;
+      text-align: center;
+    }
+  }
+
+  ul li a {
+    color: #554a45;
+
+    @include mq(tab) {
+      font-size: 25px;
+    }
+
+    @include mq(pc) {
+      display: block;
+      font-size: 20px;
+    }
+  }
+
+  @include mq(tab) {
+    font-size: 25px;
+    margin-top: 200px;
+  }
+
+  @include mq(pc) {
+    opacity: 1;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1000;
+    line-height: 100px;
+    background: #fff;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+#coverlayer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 1px;
+  opacity: 0;
+  background: #c6b5b0;
+  transition: 0.5s;
+  z-index: 11;
+}
+
+/* クリック後 */
+
+nav.is-active {
+  left: 0;
+  opacity: 1;
+  color: #554a45;
+  text-align: center;
+  width: 100%;
+  display: block;
+
+  ul li {
+    padding: 40px 0;
+    width: 100%;
+  }
+}
+
+.btnHamburger p {
+  font-size: 8px;
+  margin-top: 5px;
+  color: #000;
+  position: absolute;
+  top: 120%;
+  left: 20%;
+
+  @include mq(tab) {
+    top: 110%;
+    left: 35%;
+  }
+}
+
+#coverlayer.is-active {
+  width: 100%;
+  opacity: 1;
+}
+
 //top-main
 .top-main {
   height: 1024px;
