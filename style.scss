@@ -26,6 +26,12 @@ $text-color: #350b03;
 
 a {
   color: $text-color;
+
+  &:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+    cursor: pointer;
+  }
 }
 
 //フォントサイズ

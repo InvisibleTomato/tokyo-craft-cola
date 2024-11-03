@@ -134,7 +134,7 @@
             alt="クラフトコーラで使用するスパイスのイメージ画像"
           />
           <!-- AboutUsのテキスト -->
-          <h3>TOKYOくらふとコーラとは</h3>
+          <h3 class="section-title">TOKYOくらふとコーラとは</h3>
           <p>
             TOKYOくらふとコーラは、日本の食材や天然のスパイスをふんだんに使用し、都会で自然の恵みを感じられるクラフトコーラ専門店です。
           </p>
@@ -142,15 +142,177 @@
         <!-- about終了 -->
 
         <!-- lineup -->
-        <div id="lineup"></div>
+        <div id="lineup">
+          <!-- positionで配置する要素 -->
+          <img
+            src="img/lineup.png"
+            srcset="img/lineup.png 1x, img/lineup-2x.png 2x"
+            alt="Lineup"
+          />
+          <img
+            src="img/bubble2.png"
+            srcset="img/bubble2.png 1x, img/bubble2-2x.png 2x"
+            alt="炭酸の泡の画像"
+          />
+          <img
+            src="img/lemon.png"
+            srcset="img/lemon.png 1x, img/lemon-2x.png 2x"
+            alt="レモンの断面の画像"
+          />
+
+          <!-- Lineupのセクションタイトル -->
+          <h3 class="section-title">Lineup</h3>
+
+          <!-- Lineupのカード -->
+          <ul>
+            <li>
+              <img
+                src="img/cola4.jpg"
+                srcset="img/cola4.jpg 1x, img/cola4-2x.png 2x"
+                alt="柑橘ジンジャーコーラの商品画像"
+              />
+              <h4>柑橘ジンジャーコーラ</h4>
+              <p>
+                レモン、柚子、オレンジに生姜を加えた爽快なフルーツ系コーラ。スッキリとした後味で夏にぴったりな一杯です。
+              </p>
+              <p>¥700(税込)</p>
+            </li>
+            <li>
+              <img
+                src="img/cola4.jpg"
+                srcset="img/cola4.jpg 1x, img/cola4-2x.png 2x"
+                alt="柑橘ジンジャーコーラの商品画像"
+              />
+              <h4>信州りんごとシナモンのコーラ</h4>
+              <p>
+                国産のシナモンと青森県産のりんごを使い、自然な甘さが魅力のフルーティーなコーラ。ほんのりスパイシーな風味に仕上げました。
+              </p>
+              <p>¥700(税込)</p>
+            </li>
+            <li>
+              <img
+                src="img/cola4.jpg"
+                srcset="img/cola4.jpg 1x, img/cola4-2x.png 2x"
+                alt="柑橘ジンジャーコーラの商品画像"
+              />
+              <h4>山椒と柚子の和ハーブコーラ</h4>
+              <p>
+                日本産の山椒と柚子を主役にしたフレーバー。山椒の刺激と柚子の爽やかな香りが特徴で、後味はすっきり。食事とのペアリングにもおすすめです。
+              </p>
+              <p>¥700(税込)</p>
+            </li>
+          </ul>
+        </div>
         <!-- lineup終了 -->
 
         <!-- access -->
-        <div id="access"></div>
+        <div id="access">
+          <!-- Accessのpositionで配置する要素 -->
+          <img
+            src="./img/orange.png"
+            srcset="img/orange.png 1x, img/orange-2x.png 2x"
+            alt="オレンジの断面の画像"
+          />
+          <img
+            src="img/access.png"
+            srcset="img/access.png 1x, img/access-2x.png 2x"
+            alt="Access"
+          />
+          <!-- Accessのセクションタイトル -->
+          <h3 class="section-title">Access</h3>
+
+          <!-- Accessのflex -->
+          <div class="access-wrapper">
+            <div class="access-left">
+              <!-- 地図 -->
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3621.791291637892!2d139.70101440540432!3d35.6623729522363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b561c2f3c71%3A0x454a36f96e6381d4!2z5p2x5Lqs44OH44K244Kk44Oz44OX44Os44OD44Kv44K556CU56m25omA!5e0!3m2!1sja!2sjp!4v1730592933223!5m2!1sja!2sjp"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+            <div class="access-right">
+              <p>
+                〒150-0041<br />東京都渋谷区神南1-12-10<br />TEL : 0120-123-123
+              </p>
+              <h5>電車でお越しの場合</h5>
+              <p>JR渋谷駅より徒歩7分<br />JR原宿駅より徒歩10分</p>
+              <h5>営業時間</h5>
+              <p>
+                営業日: 年中無休<br />営業時間 : 11:00~20:00<br />お支払いには現金、各種QRコード決済、クレジットカードが利用できます。
+              </p>
+            </div>
+          </div>
+        </div>
         <!-- access終了 -->
 
         <!-- contact -->
-        <div id="contact"></div>
+        <div id="contact">
+          <!-- Contactのpositionで配置する要素 -->
+          <img
+            src="img/contact.png"
+            srcset="img/contact.png 1x, img/contact-2x.png 2x"
+            alt="Contact"
+          />
+          <img
+            src="./img/bubble1.png"
+            srcset="img/bubble1.png 1x, img/bubble1-2x.png 2x"
+            alt="炭酸の泡の画像"
+          />
+          <img
+            src="img/bubble2.png"
+            srcset="img/bubble2.png 1x, img/bubble2-2x.png 2x"
+            alt="炭酸の泡の画像"
+          />
+          <img
+            src="img/lemon.png"
+            srcset="img/lemon.png 1x, img/lemon-2x.png 2x"
+            alt="レモンの断面の画像"
+          />
+
+          <!-- Contactフォーム -->
+          <!-- Contactのセクションタイトル -->
+          <h3 class="section-title">Contact</h3>
+          <!-- form -->
+          <div class="contact">
+            <article>
+              <h6>
+                <img
+                  src="./images/text-contact.svg"
+                  alt="お問い合わせ"
+                  class="scr-target"
+                />
+              </h6>
+              <section>
+                <form
+                  action="confirm.php"
+                  method="post"
+                  id="contact"
+                  class="scr-target"
+                >
+                  <dl>
+                    <input type="text" name="name" placeholder="*お名前" />
+                    <input
+                      type="email"
+                      name="email1"
+                      id="email1"
+                      placeholder="*メールアドレス"
+                    />
+                    <textarea
+                      name="content"
+                      placeholder="*お問い合わせ内容"
+                    ></textarea>
+                  </dl>
+                  <input type="submit" value="入力内容確認" />
+                </form>
+              </section>
+            </article>
+          </div>
+        </div>
         <!-- contact終了 -->
       </main>
       <!-- main終了 -->
