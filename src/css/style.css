@@ -140,13 +140,13 @@ header {
 }
 .top-main .yellow-box3 {
   width: 40%;
-  height: 20%;
+  height: 10%;
   border-radius: 10px 0 0 10px;
   background: #ffee62;
   overflow: hidden;
   position: absolute;
   right: 0;
-  top: 65%;
+  top: 62%;
 }
 .top-main h2 {
   writing-mode: vertical-rl; /* 縦書きに設定 */
@@ -372,6 +372,80 @@ header {
   padding: 5% 0;
 }
 
+#access {
+  position: relative;
+  height: 800px;
+}
+#access .access-title {
+  margin-top: 15%;
+}
+#access .access-orange {
+  width: 20%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: -10%;
+  z-index: -10;
+}
+#access .access-png {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: -20%;
+  right: 0;
+}
+#access .access-wrapper {
+  display: flex;
+}
+#access .access-wrapper .access-left {
+  padding: 10% 0 0 5%;
+}
+#access .access-wrapper .access-right {
+  padding: 10% 0 0 5%;
+}
+#access .access-wrapper .access-right p {
+  line-height: 1.5;
+  margin-bottom: 5%;
+}
+#access .access-wrapper .access-right h5 {
+  color: #350b03;
+  font-family: "Noto Sans JP";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 144.786%; /* 31.853px */
+  letter-spacing: 6.6px;
+  padding: 4% 0 4% 0;
+}
+
+#contact {
+  height: 800px;
+  position: relative;
+}
+#contact .contact-bubble1 {
+  width: 20%;
+  position: absolute;
+  top: 70%;
+  left: 0;
+  transform: scaleX(-1);
+}
+#contact .contact-bubble2 {
+  width: 20%;
+  position: absolute;
+  top: -20%;
+  right: 0%;
+  overflow: hidden;
+  transform: scaleX(-1);
+}
+#contact .contact-lemon {
+  width: 20%;
+  position: absolute;
+  bottom: -10%;
+  right: 0;
+}
+#contact section form {
+  height: 500px;
+}
 footer {
   height: 150px;
   position: relative;
