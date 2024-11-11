@@ -61,6 +61,22 @@ html {
   line-height: normal;
 }
 
+//セクションタイトル
+.section-title {
+  color: #fff;
+  font-family: "Josefin Sans";
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 10px;
+  background: $blue-box;
+  width: 10%;
+  text-align: center;
+  padding: 1%;
+  margin: 0 auto;
+}
+
 //header
 header {
   position: fixed;
@@ -208,8 +224,216 @@ header {
 }
 
 //about
+#about {
+  position: relative;
+  height: 1000px;
+
+  .yellow-box4 {
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    background: $yellow-box;
+    border-radius: 10px;
+  }
+
+  .yellow-box5 {
+    width: 30%;
+    height: 20%;
+    position: absolute;
+    top: 91%;
+    right: 18%;
+    background: $yellow-box;
+    border-radius: 10px;
+  }
+
+  .cola-3 {
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+  }
+  .about-orange {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    top: -15%;
+    left: 0%;
+    overflow: hidden;
+    z-index: -10;
+  }
+
+  .about-bubble {
+    width: 40%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+  }
+
+  .about-spice {
+    width: 45%;
+    height: auto;
+    overflow: hidden;
+    position: absolute;
+    top: 80%;
+    right: 0%;
+  }
+
+  .about-us {
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: -10%;
+    right: 0;
+    z-index: -10;
+  }
+
+  .about-title {
+    padding: 1% 1% 1% 0;
+    width: 30%;
+    position: absolute;
+    top: 20%;
+    right: 0;
+    overflow: hidden;
+    margin: 0;
+  }
+
+  .about-text {
+    width: 25%;
+    height: auto;
+    color: #350b03;
+    font-family: "Noto Sans JP";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 144.735%; /* 28.947px */
+    letter-spacing: 8px;
+    position: absolute;
+    top: 32%;
+    right: 3%;
+  }
+}
 
 //lineup
+
+#lineup {
+  height: 800px;
+  position: relative;
+  .lineup-bubble {
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+  }
+  .about-lemon {
+    width: 15%;
+    z-index: -10;
+    position: absolute;
+    top: 5%;
+    right: 0;
+  }
+  .line-up {
+    width: 30%;
+    position: absolute;
+    left: 0;
+    top: -15%;
+  }
+
+  .lineup-title {
+    margin-top: 25%;
+  }
+
+  .lineup-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10%;
+    .lineup-1 {
+      width: 20%;
+      img {
+        width: 100%;
+      }
+      h4 {
+        color: #350b03;
+        font-family: "Noto Sans JP";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 5% 0;
+      }
+      p {
+        color: #350b03;
+        font-family: "Noto Sans JP";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.24px;
+        padding: 5% 0;
+      }
+    }
+
+    .lineup-2 {
+      width: 20%;
+      img {
+        width: 100%;
+      }
+      h4 {
+        color: #350b03;
+        font-family: "Noto Sans JP";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 5% 0;
+      }
+
+      p {
+        color: #350b03;
+        font-family: "Noto Sans JP";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.24px;
+        padding: 5% 0;
+      }
+    }
+
+    .lineup-3 {
+      width: 20%;
+      img {
+        width: 100%;
+      }
+      h4 {
+        color: #350b03;
+        font-family: "Noto Sans JP";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 5% 0;
+      }
+      p {
+        color: #350b03;
+        font-family: "Noto Sans JP";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 2.24px;
+        padding: 5% 0;
+      }
+    }
+  }
+}
 
 //access
 
