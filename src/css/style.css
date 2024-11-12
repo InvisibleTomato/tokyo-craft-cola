@@ -419,13 +419,13 @@ header {
 }
 
 #contact {
-  height: 800px;
+  height: 600px;
   position: relative;
 }
 #contact .contact-bubble1 {
   width: 20%;
   position: absolute;
-  top: 70%;
+  top: 40%;
   left: 0;
   transform: scaleX(-1);
 }
@@ -443,9 +443,43 @@ header {
   bottom: -10%;
   right: 0;
 }
-#contact section form {
-  height: 500px;
+#contact .contact-png {
+  width: 30%;
+  position: absolute;
+  top: -15%;
+  left: 0;
 }
+#contact .contact-title {
+  margin-top: 5%;
+}
+#contact input {
+  display: block;
+  width: 30%;
+  padding: 1%;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin: 2% auto;
+}
+#contact textarea {
+  display: block;
+  width: 30%;
+  padding: 1%;
+  height: 15em;
+  border: 2px solid #000;
+  border-radius: 10px;
+  margin: 2% auto;
+}
+#contact .submit-button {
+  background: #fff;
+  width: 10%;
+}
+#contact .submit-button:hover {
+  background: #2c459e;
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 footer {
   height: 150px;
   position: relative;
