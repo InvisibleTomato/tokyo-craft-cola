@@ -6,9 +6,9 @@
 
 // ブレークポイントの定義
 $breakpoint: (
-  sp: "screen and (max-width: 767px)",
-  tab: "screen and (min-width: 768px)",
   pc: "screen and (min-width: 1025px)",
+  tab: "screen and (max-width: 1024px)",
+  sp: "screen and (max-width: 920px)",
 );
 
 @mixin mq($bp) {
@@ -65,7 +65,7 @@ html {
 .section-title {
   color: #fff;
   font-family: "Josefin Sans";
-  font-size: 30px;
+  font-size: 1.875rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -190,6 +190,10 @@ header {
     position: absolute;
     right: 0;
     top: 62%;
+
+    @include mq(tab) {
+      top: 50%;
+    }
   }
   //キャッチコピー
   h2 {
@@ -200,7 +204,7 @@ header {
     font-weight: 400;
     line-height: nomal;
     font-family: "Kaisei Tokumin";
-    letter-spacing: 0.4em;
+    letter-spacing: 1.5rem;
   }
   .main-title {
     position: absolute;
@@ -242,10 +246,15 @@ header {
     width: 30%;
     height: 20%;
     position: absolute;
-    top: 91%;
+    top: 90%;
     right: 18%;
     background: $yellow-box;
     border-radius: 10px;
+
+    @include mq(tab) {
+      height: 15%;
+      top: 87%;
+    }
   }
 
   .cola-3 {
@@ -301,6 +310,10 @@ header {
     right: 0;
     overflow: hidden;
     margin: 0;
+
+    @include mq(tab) {
+      width: 38%;
+    }
   }
 
   .about-text {
@@ -308,7 +321,7 @@ header {
     height: auto;
     color: #350b03;
     font-family: "Noto Sans JP";
-    font-size: 20px;
+    font-size: 1.25rem;
     font-style: normal;
     font-weight: 500;
     line-height: 144.735%; /* 28.947px */
@@ -316,6 +329,12 @@ header {
     position: absolute;
     top: 32%;
     right: 3%;
+
+    @include mq(tab) {
+      width: 28%;
+      top: 30%;
+      right: 9%;
+    }
   }
 }
 
@@ -356,13 +375,18 @@ header {
     margin-top: 10%;
     .lineup-1 {
       width: 20%;
+
+      @include mq(tab) {
+        width: 25%;
+      }
+
       img {
         width: 100%;
       }
       h4 {
         color: #350b03;
         font-family: "Noto Sans JP";
-        font-size: 18px;
+        font-size: 1.25rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -371,24 +395,34 @@ header {
       p {
         color: #350b03;
         font-family: "Noto Sans JP";
-        font-size: 16px;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         letter-spacing: 2.24px;
         padding: 5% 0;
+
+        @include mq(tab) {
+          line-height: 1.5rem;
+          height: 20%;
+        }
       }
     }
 
     .lineup-2 {
       width: 20%;
+
+      @include mq(tab) {
+        width: 25%;
+      }
+
       img {
         width: 100%;
       }
       h4 {
         color: #350b03;
         font-family: "Noto Sans JP";
-        font-size: 18px;
+        font-size: 1.25rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -398,24 +432,34 @@ header {
       p {
         color: #350b03;
         font-family: "Noto Sans JP";
-        font-size: 16px;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         letter-spacing: 2.24px;
         padding: 5% 0;
+
+        @include mq(tab) {
+          line-height: 1.5rem;
+          height: 20%;
+        }
       }
     }
 
     .lineup-3 {
       width: 20%;
+
+      @include mq(tab) {
+        width: 25%;
+      }
+
       img {
         width: 100%;
       }
       h4 {
         color: #350b03;
         font-family: "Noto Sans JP";
-        font-size: 18px;
+        font-size: 1.25rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
@@ -424,12 +468,17 @@ header {
       p {
         color: #350b03;
         font-family: "Noto Sans JP";
-        font-size: 16px;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
         letter-spacing: 2.24px;
         padding: 5% 0;
+
+        @include mq(tab) {
+          line-height: 1.5rem;
+          height: 20%;
+        }
       }
     }
   }
@@ -539,7 +588,7 @@ header {
     display: block;
     width: 30%;
     padding: 1%;
-    height: 15em;
+    height: 15rem;
     border: 2px solid #000;
     border-radius: 10px;
     margin: 2% auto;
@@ -566,8 +615,8 @@ footer {
 
   .copy-right {
     text-align: center;
-    font-size: 12px;
-    margin: -20px;
+    font-size: 0.75rem;
+    margin: -1.5rem;
     width: 100%;
   }
   .footer-inner {
@@ -576,23 +625,23 @@ footer {
 
     .footer-left {
       a img {
-        width: 170px;
+        width: 10%;
         position: absolute;
-        top: 10px;
+        top: 1rem;
         left: 10px;
       }
     }
 
     .footer-right {
       width: 25%;
-      margin-top: 10px;
+      margin-top: 1rem;
       height: 135px;
       p {
-        font-size: 16px;
+        font-size: 1rem;
         font-style: normal;
         font-weight: 400;
         letter-spacing: 4.8px;
-        line-height: 1.5em;
+        line-height: 1.5rem;
       }
 
       .footer-access {
