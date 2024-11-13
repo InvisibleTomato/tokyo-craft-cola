@@ -363,6 +363,7 @@ header {
 #about {
   position: relative;
   height: 1000px;
+  padding-top: 5%;
 }
 #about .yellow-box4 {
   width: 50%;
@@ -468,6 +469,8 @@ header {
 #lineup {
   height: 800px;
   position: relative;
+  padding-top: 5%;
+  margin-top: 15%;
 }
 #lineup .lineup-bubble {
   width: 40%;
@@ -489,9 +492,6 @@ header {
   position: absolute;
   left: 0;
   top: -15%;
-}
-#lineup .lineup-title {
-  margin-top: 25%;
 }
 #lineup .lineup-wrapper {
   display: flex;
@@ -610,8 +610,7 @@ header {
 #access {
   position: relative;
   height: 800px;
-}
-#access .access-title {
+  padding-top: 5%;
   margin-top: 15%;
 }
 #access .access-orange {
@@ -679,6 +678,8 @@ header {
 #contact {
   height: 800px;
   position: relative;
+  padding-top: 5%;
+  margin-top: 5%;
 }
 @media screen and (max-width: 1024px) {
   #contact {
@@ -711,9 +712,6 @@ header {
   position: absolute;
   top: -15%;
   left: 0;
-}
-#contact .contact-title {
-  margin-top: 5%;
 }
 #contact input {
   display: block;

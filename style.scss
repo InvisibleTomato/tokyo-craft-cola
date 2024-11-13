@@ -413,6 +413,10 @@ header {
 #about {
   position: relative;
   height: 1000px;
+  padding-top: 5%;
+
+  @include mq(sp) {
+  }
 
   .yellow-box4 {
     width: 50%;
@@ -525,6 +529,11 @@ header {
 #lineup {
   height: 800px;
   position: relative;
+  padding-top: 5%;
+  margin-top: 15%;
+
+  @include mq(sp) {
+  }
   .lineup-bubble {
     width: 40%;
     position: absolute;
@@ -545,10 +554,6 @@ header {
     position: absolute;
     left: 0;
     top: -15%;
-  }
-
-  .lineup-title {
-    margin-top: 25%;
   }
 
   .lineup-wrapper {
@@ -670,9 +675,10 @@ header {
 #access {
   position: relative;
   height: 800px;
+  padding-top: 5%;
+  margin-top: 15%;
 
-  .access-title {
-    margin-top: 15%;
+  @include mq(sp) {
   }
 
   .access-orange {
@@ -745,9 +751,14 @@ header {
 #contact {
   height: 800px;
   position: relative;
+  padding-top: 5%;
+  margin-top: 5%;
 
   @include mq(tab) {
     height: 700px;
+  }
+
+  @include mq(sp) {
   }
 
   .contact-bubble1 {
@@ -777,10 +788,6 @@ header {
     position: absolute;
     top: -15%;
     left: 0;
-  }
-
-  .contact-title {
-    margin-top: 5%;
   }
 
   input {
