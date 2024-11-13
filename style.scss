@@ -521,6 +521,10 @@ header {
       p {
         line-height: 1.5;
         margin-bottom: 5%;
+
+        @include mq(tab) {
+          padding-right: 5%;
+        }
       }
 
       h5 {
@@ -540,7 +544,7 @@ header {
 //contact
 
 #contact {
-  height: 600px;
+  height: 800px;
   position: relative;
 
   .contact-bubble1 {
