@@ -17,12 +17,12 @@ html {
     font-size: 1rem;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   html {
     font-size: 0.875rem;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   html {
     font-size: 0.75rem;
   }
@@ -42,7 +42,7 @@ html {
   padding: 1%;
   margin: 0 auto;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .section-title {
     font-size: 1.15rem;
   }
@@ -66,7 +66,7 @@ header {
   top: 10px;
   left: 10px;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .header-inner .header-left h1 img {
     width: 100px;
   }
@@ -89,7 +89,7 @@ header {
   font-weight: 400;
   line-height: normal;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .header-inner .header-right nav {
     opacity: 0;
   }
@@ -129,7 +129,7 @@ header {
 .hamburger.active span:nth-child(3) {
   transform: translateY(-6px) rotate(-45deg);
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .hamburger {
     display: flex;
   }
@@ -221,7 +221,7 @@ header {
   padding-top: 100px;
   overflow: hidden;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .top-main {
     height: 700px;
   }
@@ -233,7 +233,7 @@ header {
   top: 10%;
   left: 0;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .top-main .cola-1 {
     width: 50%;
   }
@@ -246,12 +246,19 @@ header {
   left: 54%;
   transform: translate(-50%, -50%);
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .top-main .cola-2 {
     width: 95%;
     top: 65%;
     left: 72%;
     z-index: 1000;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  .top-main .cola-2 {
+    width: 60%;
+    top: 50%;
+    left: 60%;
   }
 }
 .top-main .store-img {
@@ -261,7 +268,7 @@ header {
   right: 6%;
   top: 17%;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .top-main .store-img {
     width: 80%;
     right: -20%;
@@ -277,7 +284,7 @@ header {
   top: 13%;
   right: 0;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .top-main .yellow-box1 {
     top: 15%;
     width: 60%;
@@ -294,7 +301,7 @@ header {
   top: 34%;
   left: -20%;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .top-main .yellow-box2 {
     top: 20%;
   }
@@ -309,12 +316,12 @@ header {
   right: 0;
   top: 62%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   .top-main .yellow-box3 {
     top: 50%;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .top-main .yellow-box3 {
     width: 45%;
     height: 10%;
@@ -331,7 +338,7 @@ header {
   font-family: "Kaisei Tokumin";
   letter-spacing: 1.5rem;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .top-main h2 {
     font-size: 3rem;
     background: #fff;
@@ -344,7 +351,7 @@ header {
   top: 10%;
   left: 35%;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .top-main .main-title {
     top: 25%;
   }
@@ -361,7 +368,7 @@ header {
   padding: 10px;
   padding-top: 30px;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   .top-main .main-title2 {
     top: 50%;
     left: 20%;
@@ -372,12 +379,16 @@ header {
   position: relative;
   height: 1000px;
   padding-top: 5%;
-  overflow: hidden;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #about {
     padding-top: 10%;
     height: 600px;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #about {
+    height: 800px;
   }
 }
 #about .yellow-box4 {
@@ -389,7 +400,7 @@ header {
   background: #ffee62;
   border-radius: 10px;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #about .yellow-box4 {
     height: 10%;
     top: 1%;
@@ -405,13 +416,13 @@ header {
   background: #ffee62;
   border-radius: 10px;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #about .yellow-box5 {
-    height: 15%;
-    top: 87%;
+    height: 10%;
+    top: 70%;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #about .yellow-box5 {
     width: 60%;
     height: 12%;
@@ -427,7 +438,7 @@ header {
   top: 10%;
   left: 0%;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #about .cola-3 {
     top: 5%;
     left: 50%;
@@ -442,7 +453,7 @@ header {
   overflow: hidden;
   z-index: -10;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #about .about-orange {
     top: -5%;
   }
@@ -455,10 +466,10 @@ header {
   transform: translate(-50%, -50%);
   z-index: -10;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #about .about-bubble {
     top: 80%;
-    width: 50%;
+    width: 40%;
     transform: translate(20%, -50%);
   }
 }
@@ -470,27 +481,37 @@ header {
   top: 80%;
   right: 0%;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #about .about-spice {
     width: 55%;
     top: 70%;
     right: 45%;
   }
 }
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #about .about-spice {
+    top: 60%;
+  }
+}
 #about .about-us {
   width: 50%;
   height: auto;
   position: absolute;
-  top: -10%;
+  top: 0%;
   right: 0;
   z-index: -10;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #about .about-us {
     width: 40%;
     top: 20%;
     right: 63%;
     transform: rotate(-30deg);
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #about .about-us {
+    top: -10%;
   }
 }
 #about .about-title {
@@ -502,12 +523,13 @@ header {
   overflow: hidden;
   margin: 0;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #about .about-title {
-    width: 38%;
+    width: 40%;
+    font-size: 1.5rem;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #about .about-title {
     top: 35%;
     right: 0%;
@@ -530,20 +552,21 @@ header {
   top: 32%;
   right: 3%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #about .about-text {
-    width: 28%;
+    width: 35%;
     top: 30%;
-    right: 9%;
+    right: 2%;
+    font-size: 1.15rem;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #about .about-text {
     font-size: 0.9rem;
     width: 50%;
     line-height: 1.25rem;
     letter-spacing: 0.4rem;
-    top: 54%;
+    top: 51%;
     right: 0%;
     transform: translate(-50%, -50%);
   }
@@ -555,16 +578,27 @@ header {
   padding-top: 5%;
   margin-top: 15%;
 }
-@media screen and (max-width: 920px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #lineup {
+    height: 700px;
+    padding-top: 20%;
+  }
+}
+@media screen and (max-width: 720px) {
   #lineup {
     height: 1500px;
     padding-top: 20%;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .lineup-title {
     width: 30%;
     padding: 3%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #lineup .lineup-title {
+    width: 25%;
   }
 }
 #lineup .lineup-bubble {
@@ -575,7 +609,7 @@ header {
   transform: translate(-50%, -50%);
   z-index: -10;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .lineup-bubble {
     width: 50%;
     top: 5%;
@@ -590,7 +624,7 @@ header {
   top: 5%;
   right: 0;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .lineup-lemon {
     width: 25%;
     top: 0;
@@ -602,10 +636,15 @@ header {
   left: 0;
   top: -15%;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .line-up {
     width: 40%;
     top: -5%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #lineup .line-up {
+    width: 40%;
   }
 }
 #lineup .lineup-wrapper {
@@ -613,7 +652,7 @@ header {
   justify-content: space-around;
   margin-top: 10%;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .lineup-wrapper {
     width: 80%;
     display: block;
@@ -623,15 +662,15 @@ header {
 #lineup .lineup-wrapper .lineup-1 {
   width: 20%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #lineup .lineup-wrapper .lineup-1 {
     width: 25%;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .lineup-wrapper .lineup-1 {
     width: 80%;
-    margin: 20% auto;
+    margin: 20% auto 10% auto;
   }
 }
 #lineup .lineup-wrapper .lineup-1 img {
@@ -646,10 +685,15 @@ header {
   line-height: normal;
   padding: 5% 0;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .lineup-wrapper .lineup-1 h4 {
     font-size: 1rem;
     padding: 5% 0 0 0;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #lineup .lineup-wrapper .lineup-1 h4 {
+    font-size: 1rem;
   }
 }
 #lineup .lineup-wrapper .lineup-1 p {
@@ -662,13 +706,14 @@ header {
   letter-spacing: 2.24px;
   padding: 5% 0;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #lineup .lineup-wrapper .lineup-1 p {
     line-height: 1.5rem;
-    height: 20%;
+    padding: 5% 0 15% 0;
+    height: 130px;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .lineup-wrapper .lineup-1 p {
     font-size: 0.75rem;
     padding: 5% 0;
@@ -677,15 +722,15 @@ header {
 #lineup .lineup-wrapper .lineup-2 {
   width: 20%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #lineup .lineup-wrapper .lineup-2 {
     width: 25%;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .lineup-wrapper .lineup-2 {
     width: 80%;
-    margin: 20% auto;
+    margin: 10% auto;
   }
 }
 #lineup .lineup-wrapper .lineup-2 img {
@@ -700,10 +745,15 @@ header {
   line-height: normal;
   padding: 5% 0;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .lineup-wrapper .lineup-2 h4 {
     font-size: 1rem;
     padding: 5% 0 0 0;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #lineup .lineup-wrapper .lineup-2 h4 {
+    font-size: 1rem;
   }
 }
 #lineup .lineup-wrapper .lineup-2 p {
@@ -716,13 +766,14 @@ header {
   letter-spacing: 2.24px;
   padding: 5% 0;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #lineup .lineup-wrapper .lineup-2 p {
     line-height: 1.5rem;
-    height: 20%;
+    padding: 5% 0 15% 0;
+    height: 130px;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .lineup-wrapper .lineup-2 p {
     font-size: 0.75rem;
     padding: 5% 0;
@@ -731,15 +782,15 @@ header {
 #lineup .lineup-wrapper .lineup-3 {
   width: 20%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #lineup .lineup-wrapper .lineup-3 {
     width: 25%;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .lineup-wrapper .lineup-3 {
     width: 80%;
-    margin: 20% auto;
+    margin: 10% auto;
   }
 }
 #lineup .lineup-wrapper .lineup-3 img {
@@ -754,10 +805,15 @@ header {
   line-height: normal;
   padding: 5% 0;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .lineup-wrapper .lineup-3 h4 {
     font-size: 1rem;
     padding: 5% 0 0 0;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #lineup .lineup-wrapper .lineup-3 h4 {
+    font-size: 1rem;
   }
 }
 #lineup .lineup-wrapper .lineup-3 p {
@@ -770,13 +826,14 @@ header {
   letter-spacing: 2.24px;
   padding: 5% 0;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #lineup .lineup-wrapper .lineup-3 p {
     line-height: 1.5rem;
-    height: 20%;
+    height: 130px;
+    padding: 5% 0 15% 0;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #lineup .lineup-wrapper .lineup-3 p {
     font-size: 0.75rem;
     padding: 5% 0;
@@ -789,15 +846,27 @@ header {
   padding-top: 5%;
   margin-top: 15%;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #access {
+    padding-top: 20%;
+    height: 900px;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #access {
+    height: 1300px;
     padding-top: 20%;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #access .access-title {
     width: 40%;
     padding: 3%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #access .access-title {
+    width: 25%;
   }
 }
 #access .access-orange {
@@ -815,16 +884,29 @@ header {
   top: -20%;
   right: 0;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #access .access-png {
     top: -5%;
     width: 40%;
   }
 }
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #access .access-png {
+    width: 40%;
+    top: 0%;
+  }
+}
 #access .access-wrapper {
   display: flex;
 }
-@media screen and (max-width: 920px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #access .access-wrapper {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 720px) {
   #access .access-wrapper {
     display: block;
     width: 100%;
@@ -834,13 +916,19 @@ header {
 #access .access-wrapper .access-left {
   padding: 10% 0 0 5%;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #access .access-wrapper .access-left {
     width: 100%;
     padding: 0;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #access .access-wrapper .access-left {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 720px) {
   #access .access-wrapper .access-left iframe {
     display: block;
     width: 90%;
@@ -848,19 +936,35 @@ header {
     margin: 15% auto 0 auto;
   }
 }
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #access .access-wrapper .access-left iframe {
+    display: block;
+    width: 80%;
+    height: 400px;
+    margin: 15% auto 0 auto;
+  }
+}
 #access .access-wrapper .access-right {
   padding: 10% 0 0 5%;
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #access .access-wrapper .access-right {
+    padding: 10% 0 0 0;
+    margin: 0 30% 0 auto;
+    width: 60%;
+  }
 }
 #access .access-wrapper .access-right p {
   line-height: 1.5;
   margin-bottom: 5%;
 }
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #access .access-wrapper .access-right p {
-    padding-right: 5%;
+    padding-right: 0;
+    font-size: 1.15rem;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #access .access-wrapper .access-right p {
     font-size: 1rem;
   }
@@ -875,7 +979,7 @@ header {
   letter-spacing: 6.6px;
   padding: 4% 0 4% 0;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #access .access-wrapper .access-right h5 {
     font-size: 1.25rem;
   }
@@ -887,18 +991,23 @@ header {
   padding-top: 5%;
   margin-top: 5%;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #contact .contact-title {
     width: 40%;
     padding: 3%;
   }
 }
-@media screen and (max-width: 1024px) {
-  #contact {
-    height: 700px;
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #contact .contact-title {
+    width: 25%;
   }
 }
-@media screen and (max-width: 920px) {
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #contact {
+    height: 800px;
+  }
+}
+@media screen and (max-width: 720px) {
   #contact {
     height: 550px;
   }
@@ -910,10 +1019,16 @@ header {
   left: 0;
   transform: scaleX(-1);
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #contact .contact-bubble1 {
     width: 30%;
     top: 80%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #contact .contact-bubble1 {
+    width: 30%;
+    top: 65%;
   }
 }
 #contact .contact-bubble2 {
@@ -923,11 +1038,17 @@ header {
   right: 0%;
   transform: scaleX(-1);
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #contact .contact-bubble2 {
     width: 30%;
     top: 0%;
     right: 0%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #contact .contact-bubble2 {
+    width: 25%;
+    top: -5%;
   }
 }
 #contact .contact-lemon {
@@ -936,7 +1057,7 @@ header {
   bottom: -10%;
   right: 0;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #contact .contact-lemon {
     bottom: -5%;
   }
@@ -947,10 +1068,15 @@ header {
   top: -15%;
   left: 0;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #contact .contact-png {
     width: 40%;
     top: -10%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #contact .contact-png {
+    width: 40%;
   }
 }
 #contact input {
@@ -961,7 +1087,7 @@ header {
   border-radius: 10px;
   margin: 2% auto;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #contact input {
     width: 50%;
     margin: 5% auto;
@@ -976,7 +1102,7 @@ header {
   border-radius: 10px;
   margin: 2% auto;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   #contact textarea {
     width: 50%;
     margin: 5% auto;
@@ -986,7 +1112,12 @@ header {
   background: #fff;
   width: 10%;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
+  #contact .submit-button {
+    width: 30%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #contact .submit-button {
     width: 30%;
   }
@@ -1019,9 +1150,15 @@ footer .footer-inner .footer-left a img {
   top: 1rem;
   left: 10px;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   footer .footer-inner .footer-left a img {
     width: 20%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  footer .footer-inner .footer-left a img {
+    top: 5%;
+    left: 1%;
   }
 }
 footer .footer-inner .footer-right {
@@ -1029,9 +1166,15 @@ footer .footer-inner .footer-right {
   margin-top: 1rem;
   height: 135px;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   footer .footer-inner .footer-right {
     width: 40%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  footer .footer-inner .footer-right {
+    width: 50%;
+    margin: 1% auto 0 65%;
   }
 }
 footer .footer-inner .footer-right p {
@@ -1041,17 +1184,27 @@ footer .footer-inner .footer-right p {
   letter-spacing: 4.8px;
   line-height: 1.5rem;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   footer .footer-inner .footer-right p {
     font-size: 0.75rem;
     letter-spacing: normal;
   }
 }
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  footer .footer-inner .footer-right p {
+    font-size: 0.75rem;
+  }
+}
 footer .footer-inner .footer-right .footer-access {
   margin-bottom: 26px;
 }
-@media screen and (max-width: 920px) {
+@media screen and (max-width: 720px) {
   footer .footer-inner .footer-right .footer-access {
     margin-bottom: 5%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  footer .footer-inner .footer-right .footer-access {
+    margin-bottom: 3%;
   }
 }/*# sourceMappingURL=style.css.map */

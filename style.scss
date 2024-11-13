@@ -7,8 +7,8 @@
 // ブレークポイントの定義
 $breakpoint: (
   pc: "screen and (min-width: 1025px)",
-  tab: "screen and (max-width: 1024px)",
-  sp: "screen and (max-width: 920px)",
+  tab: "screen and (min-width: 721px) and (max-width: 1024px)",
+  sp: "screen and (max-width: 720px)",
 );
 
 @mixin mq($bp) {
@@ -303,6 +303,12 @@ header {
       left: 72%;
       z-index: 1000;
     }
+
+    @include mq(tab) {
+      width: 60%;
+      top: 50%;
+      left: 60%;
+    }
   }
   .store-img {
     width: 40%;
@@ -420,10 +426,14 @@ header {
   position: relative;
   height: 1000px;
   padding-top: 5%;
-  overflow: hidden;
+
   @include mq(sp) {
     padding-top: 10%;
     height: 600px;
+  }
+
+  @include mq(tab) {
+    height: 800px;
   }
 
   .yellow-box4 {
@@ -452,8 +462,8 @@ header {
     border-radius: 10px;
 
     @include mq(tab) {
-      height: 15%;
-      top: 87%;
+      height: 10%;
+      top: 70%;
     }
 
     @include mq(sp) {
@@ -501,7 +511,7 @@ header {
 
     @include mq(sp) {
       top: 80%;
-      width: 50%;
+      width: 40%;
       transform: translate(20%, -50%);
     }
   }
@@ -519,13 +529,17 @@ header {
       top: 70%;
       right: 45%;
     }
+
+    @include mq(tab) {
+      top: 60%;
+    }
   }
 
   .about-us {
     width: 50%;
     height: auto;
     position: absolute;
-    top: -10%;
+    top: 0%;
     right: 0;
     z-index: -10;
 
@@ -534,6 +548,10 @@ header {
       top: 20%;
       right: 63%;
       transform: rotate(-30deg);
+    }
+
+    @include mq(tab) {
+      top: -10%;
     }
   }
 
@@ -547,7 +565,8 @@ header {
     margin: 0;
 
     @include mq(tab) {
-      width: 38%;
+      width: 40%;
+      font-size: 1.5rem;
     }
 
     @include mq(sp) {
@@ -574,9 +593,10 @@ header {
     right: 3%;
 
     @include mq(tab) {
-      width: 28%;
+      width: 35%;
       top: 30%;
-      right: 9%;
+      right: 2%;
+      font-size: 1.15rem;
     }
 
     @include mq(sp) {
@@ -584,7 +604,7 @@ header {
       width: 50%;
       line-height: 1.25rem;
       letter-spacing: 0.4rem;
-      top: 54%;
+      top: 51%;
       right: 0%;
       transform: translate(-50%, -50%);
     }
@@ -599,6 +619,10 @@ header {
   padding-top: 5%;
   margin-top: 15%;
 
+  @include mq(tab) {
+    height: 700px;
+    padding-top: 20%;
+  }
   @include mq(sp) {
     // overflow: hidden;
     height: 1500px;
@@ -609,6 +633,10 @@ header {
     @include mq(sp) {
       width: 30%;
       padding: 3%;
+    }
+
+    @include mq(tab) {
+      width: 25%;
     }
   }
 
@@ -649,6 +677,10 @@ header {
       width: 40%;
       top: -5%;
     }
+
+    @include mq(tab) {
+      width: 40%;
+    }
   }
 
   .lineup-wrapper {
@@ -670,7 +702,7 @@ header {
 
       @include mq(sp) {
         width: 80%;
-        margin: 20% auto;
+        margin: 20% auto 10% auto;
       }
 
       img {
@@ -689,6 +721,10 @@ header {
           font-size: 1rem;
           padding: 5% 0 0 0;
         }
+
+        @include mq(tab) {
+          font-size: 1rem;
+        }
       }
       p {
         color: #350b03;
@@ -702,7 +738,8 @@ header {
 
         @include mq(tab) {
           line-height: 1.5rem;
-          height: 20%;
+          padding: 5% 0 15% 0;
+          height: 130px;
         }
 
         @include mq(sp) {
@@ -721,7 +758,7 @@ header {
 
       @include mq(sp) {
         width: 80%;
-        margin: 20% auto;
+        margin: 10% auto;
       }
 
       img {
@@ -740,6 +777,10 @@ header {
           font-size: 1rem;
           padding: 5% 0 0 0;
         }
+
+        @include mq(tab) {
+          font-size: 1rem;
+        }
       }
 
       p {
@@ -754,7 +795,8 @@ header {
 
         @include mq(tab) {
           line-height: 1.5rem;
-          height: 20%;
+          padding: 5% 0 15% 0;
+          height: 130px;
         }
 
         @include mq(sp) {
@@ -773,7 +815,7 @@ header {
 
       @include mq(sp) {
         width: 80%;
-        margin: 20% auto;
+        margin: 10% auto;
       }
 
       img {
@@ -792,6 +834,10 @@ header {
           font-size: 1rem;
           padding: 5% 0 0 0;
         }
+
+        @include mq(tab) {
+          font-size: 1rem;
+        }
       }
       p {
         color: #350b03;
@@ -805,7 +851,8 @@ header {
 
         @include mq(tab) {
           line-height: 1.5rem;
-          height: 20%;
+          height: 130px;
+          padding: 5% 0 15% 0;
         }
 
         @include mq(sp) {
@@ -826,12 +873,22 @@ header {
 
   @include mq(sp) {
     padding-top: 20%;
+    height: 900px;
+  }
+
+  @include mq(tab) {
+    height: 1300px;
+    padding-top: 20%;
   }
 
   .access-title {
     @include mq(sp) {
       width: 40%;
       padding: 3%;
+    }
+
+    @include mq(tab) {
+      width: 25%;
     }
   }
 
@@ -855,10 +912,21 @@ header {
       top: -5%;
       width: 40%;
     }
+
+    @include mq(tab) {
+      width: 40%;
+      top: 0%;
+    }
   }
 
   .access-wrapper {
     display: flex;
+
+    @include mq(tab) {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+    }
 
     @include mq(sp) {
       display: block;
@@ -872,6 +940,10 @@ header {
         width: 100%;
         padding: 0;
       }
+      @include mq(tab) {
+        width: 100%;
+        padding: 0;
+      }
 
       iframe {
         @include mq(sp) {
@@ -880,17 +952,31 @@ header {
           height: 300px;
           margin: 15% auto 0 auto;
         }
+
+        @include mq(tab) {
+          display: block;
+          width: 80%;
+          height: 400px;
+          margin: 15% auto 0 auto;
+        }
       }
     }
     .access-right {
       padding: 10% 0 0 5%;
+
+      @include mq(tab) {
+        padding: 10% 0 0 0;
+        margin: 0 30% 0 auto;
+        width: 60%;
+      }
 
       p {
         line-height: 1.5;
         margin-bottom: 5%;
 
         @include mq(tab) {
-          padding-right: 5%;
+          padding-right: 0;
+          font-size: 1.15rem;
         }
 
         @include mq(sp) {
@@ -929,10 +1015,14 @@ header {
       width: 40%;
       padding: 3%;
     }
+
+    @include mq(tab) {
+      width: 25%;
+    }
   }
 
   @include mq(tab) {
-    height: 700px;
+    height: 800px;
   }
 
   @include mq(sp) {
@@ -950,6 +1040,11 @@ header {
       width: 30%;
       top: 80%;
     }
+
+    @include mq(tab) {
+      width: 30%;
+      top: 65%;
+    }
   }
   .contact-bubble2 {
     width: 20%;
@@ -963,6 +1058,11 @@ header {
       width: 30%;
       top: 0%;
       right: 0%;
+    }
+
+    @include mq(tab) {
+      width: 25%;
+      top: -5%;
     }
   }
 
@@ -985,6 +1085,10 @@ header {
     @include mq(sp) {
       width: 40%;
       top: -10%;
+    }
+
+    @include mq(tab) {
+      width: 40%;
     }
   }
 
@@ -1024,6 +1128,10 @@ header {
       width: 30%;
     }
 
+    @include mq(tab) {
+      width: 30%;
+    }
+
     &:hover {
       background: $blue-box;
       color: #fff;
@@ -1059,6 +1167,11 @@ footer {
         @include mq(sp) {
           width: 20%;
         }
+
+        @include mq(tab) {
+          top: 5%;
+          left: 1%;
+        }
       }
     }
 
@@ -1069,6 +1182,11 @@ footer {
 
       @include mq(sp) {
         width: 40%;
+      }
+
+      @include mq(tab) {
+        width: 50%;
+        margin: 1% auto 0 65%;
       }
       p {
         font-size: 1rem;
@@ -1081,6 +1199,10 @@ footer {
           font-size: 0.75rem;
           letter-spacing: normal;
         }
+
+        @include mq(tab) {
+          font-size: 0.75rem;
+        }
       }
 
       .footer-access {
@@ -1088,6 +1210,10 @@ footer {
 
         @include mq(sp) {
           margin-bottom: 5%;
+        }
+
+        @include mq(tab) {
+          margin-bottom: 3%;
         }
       }
     }
