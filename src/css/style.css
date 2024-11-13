@@ -19,12 +19,12 @@ html {
 }
 @media screen and (max-width: 1024px) {
   html {
-    font-size: 1.14rem;
+    font-size: 0.875rem;
   }
 }
 @media screen and (max-width: 920px) {
   html {
-    font-size: 1.3rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -211,6 +211,12 @@ header {
   height: 1124px;
   position: relative;
   padding-top: 100px;
+  overflow: hidden;
+}
+@media screen and (max-width: 920px) {
+  .top-main {
+    height: 700px;
+  }
 }
 .top-main .cola-1 {
   width: 30%;
@@ -221,7 +227,7 @@ header {
 }
 @media screen and (max-width: 920px) {
   .top-main .cola-1 {
-    width: 40%;
+    width: 50%;
   }
 }
 .top-main .cola-2 {
@@ -234,7 +240,10 @@ header {
 }
 @media screen and (max-width: 920px) {
   .top-main .cola-2 {
-    width: 60%;
+    width: 95%;
+    top: 65%;
+    left: 72%;
+    z-index: 1000;
   }
 }
 .top-main .store-img {
@@ -243,6 +252,12 @@ header {
   position: absolute;
   right: 6%;
   top: 17%;
+}
+@media screen and (max-width: 920px) {
+  .top-main .store-img {
+    width: 80%;
+    right: -20%;
+  }
 }
 .top-main .yellow-box1 {
   width: 46%;
@@ -254,6 +269,12 @@ header {
   top: 13%;
   right: 0;
 }
+@media screen and (max-width: 920px) {
+  .top-main .yellow-box1 {
+    top: 15%;
+    width: 60%;
+  }
+}
 .top-main .yellow-box2 {
   width: 40%;
   height: 10%;
@@ -264,6 +285,11 @@ header {
   position: absolute;
   top: 34%;
   left: -20%;
+}
+@media screen and (max-width: 920px) {
+  .top-main .yellow-box2 {
+    top: 20%;
+  }
 }
 .top-main .yellow-box3 {
   width: 40%;
@@ -280,6 +306,13 @@ header {
     top: 50%;
   }
 }
+@media screen and (max-width: 920px) {
+  .top-main .yellow-box3 {
+    width: 45%;
+    height: 10%;
+    top: 55%;
+  }
+}
 .top-main h2 {
   writing-mode: vertical-rl; /* 縦書きに設定 */
   color: #350b03;
@@ -290,10 +323,23 @@ header {
   font-family: "Kaisei Tokumin";
   letter-spacing: 1.5rem;
 }
+@media screen and (max-width: 920px) {
+  .top-main h2 {
+    font-size: 3rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 7px;
+  }
+}
 .top-main .main-title {
   position: absolute;
   top: 10%;
   left: 35%;
+}
+@media screen and (max-width: 920px) {
+  .top-main .main-title {
+    top: 25%;
+  }
 }
 .top-main .main-title2 {
   position: absolute;
@@ -306,6 +352,12 @@ header {
   border-radius: 10px;
   padding: 10px;
   padding-top: 30px;
+}
+@media screen and (max-width: 920px) {
+  .top-main .main-title2 {
+    top: 50%;
+    left: 20%;
+  }
 }
 
 #about {

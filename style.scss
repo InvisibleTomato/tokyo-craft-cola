@@ -43,11 +43,11 @@ html {
   }
 
   @include mq(tab) {
-    font-size: 1.14rem;
+    font-size: 0.875rem;
   }
 
   @include mq(sp) {
-    font-size: 1.3rem;
+    font-size: 0.75rem;
   }
 }
 
@@ -266,7 +266,11 @@ header {
   height: 1124px;
   position: relative;
   padding-top: 100px;
+  overflow: hidden;
 
+  @include mq(sp) {
+    height: 700px;
+  }
   .cola-1 {
     width: 30%;
     height: auto;
@@ -275,7 +279,7 @@ header {
     left: 0;
 
     @include mq(sp) {
-      width: 40%;
+      width: 50%;
     }
   }
 
@@ -288,7 +292,10 @@ header {
     transform: translate(-50%, -50%);
 
     @include mq(sp) {
-      width: 60%;
+      width: 95%;
+      top: 65%;
+      left: 72%;
+      z-index: 1000;
     }
   }
   .store-img {
@@ -297,6 +304,11 @@ header {
     position: absolute;
     right: 6%;
     top: 17%;
+
+    @include mq(sp) {
+      width: 80%;
+      right: -20%;
+    }
   }
 
   .yellow-box1 {
@@ -308,6 +320,11 @@ header {
     position: absolute;
     top: 13%;
     right: 0;
+
+    @include mq(sp) {
+      top: 15%;
+      width: 60%;
+    }
   }
   .yellow-box2 {
     width: 40%;
@@ -319,6 +336,10 @@ header {
     position: absolute;
     top: 34%;
     left: -20%;
+
+    @include mq(sp) {
+      top: 20%;
+    }
   }
   .yellow-box3 {
     width: 40%;
@@ -333,6 +354,12 @@ header {
     @include mq(tab) {
       top: 50%;
     }
+
+    @include mq(sp) {
+      width: 45%;
+      height: 10%;
+      top: 55%;
+    }
   }
   //キャッチコピー
   h2 {
@@ -344,11 +371,22 @@ header {
     line-height: nomal;
     font-family: "Kaisei Tokumin";
     letter-spacing: 1.5rem;
+
+    @include mq(sp) {
+      font-size: 3rem;
+      background: #fff;
+      padding: 1rem;
+      border-radius: 7px;
+    }
   }
   .main-title {
     position: absolute;
     top: 10%;
     left: 35%;
+
+    @include mq(sp) {
+      top: 25%;
+    }
   }
 
   .main-title2 {
@@ -362,6 +400,11 @@ header {
       border-radius: 10px;
       padding: 10px;
       padding-top: 30px;
+    }
+
+    @include mq(sp) {
+      top: 50%;
+      left: 20%;
     }
   }
 }
