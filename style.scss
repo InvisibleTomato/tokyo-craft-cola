@@ -138,8 +138,8 @@ header {
 // ハンバーガーメニューのボタン
 .hamburger {
   position: fixed;
-  top: 30px;
-  right: 30px;
+  top: 20px;
+  right: 20px;
   z-index: 99999;
   display: none; // PCでは非表示
   flex-direction: column;
@@ -150,7 +150,9 @@ header {
   background: none;
   border: none;
   outline: none;
-
+  padding: 2%;
+  background: $yellow-box;
+  border-radius: 4px;
   span {
     display: block;
     width: 100%;
@@ -420,6 +422,7 @@ header {
   padding-top: 5%;
   overflow: hidden;
   @include mq(sp) {
+    padding-top: 10%;
     height: 600px;
   }
 
@@ -599,6 +602,7 @@ header {
   @include mq(sp) {
     // overflow: hidden;
     height: 1500px;
+    padding-top: 20%;
   }
 
   .lineup-title {
@@ -821,6 +825,14 @@ header {
   margin-top: 15%;
 
   @include mq(sp) {
+    padding-top: 20%;
+  }
+
+  .access-title {
+    @include mq(sp) {
+      width: 40%;
+      padding: 3%;
+    }
   }
 
   .access-orange {
@@ -838,6 +850,11 @@ header {
     position: absolute;
     top: -20%;
     right: 0;
+
+    @include mq(sp) {
+      top: -5%;
+      width: 40%;
+    }
   }
 
   .access-wrapper {
@@ -846,6 +863,7 @@ header {
     @include mq(sp) {
       display: block;
       width: 100%;
+      margin: 0 auto;
     }
     .access-left {
       padding: 10% 0 0 5%;
@@ -857,8 +875,10 @@ header {
 
       iframe {
         @include mq(sp) {
+          display: block;
           width: 90%;
-          height: auto;
+          height: 300px;
+          margin: 15% auto 0 auto;
         }
       }
     }
@@ -872,6 +892,10 @@ header {
         @include mq(tab) {
           padding-right: 5%;
         }
+
+        @include mq(sp) {
+          font-size: 1rem;
+        }
       }
 
       h5 {
@@ -883,6 +907,10 @@ header {
         line-height: 144.786%; /* 31.853px */
         letter-spacing: 6.6px;
         padding: 4% 0 4% 0;
+
+        @include mq(sp) {
+          font-size: 1.25rem;
+        }
       }
     }
   }
@@ -896,11 +924,19 @@ header {
   padding-top: 5%;
   margin-top: 5%;
 
+  .contact-title {
+    @include mq(sp) {
+      width: 40%;
+      padding: 3%;
+    }
+  }
+
   @include mq(tab) {
     height: 700px;
   }
 
   @include mq(sp) {
+    height: 550px;
   }
 
   .contact-bubble1 {
@@ -909,14 +945,25 @@ header {
     top: 40%;
     left: 0;
     transform: scaleX(-1);
+
+    @include mq(sp) {
+      width: 30%;
+      top: 80%;
+    }
   }
   .contact-bubble2 {
     width: 20%;
     position: absolute;
     top: -20%;
     right: 0%;
-    overflow: hidden;
+
     transform: scaleX(-1);
+
+    @include mq(sp) {
+      width: 30%;
+      top: 0%;
+      right: 0%;
+    }
   }
 
   .contact-lemon {
@@ -924,12 +971,21 @@ header {
     position: absolute;
     bottom: -10%;
     right: 0;
+
+    @include mq(sp) {
+      bottom: -5%;
+    }
   }
   .contact-png {
     width: 30%;
     position: absolute;
     top: -15%;
     left: 0;
+
+    @include mq(sp) {
+      width: 40%;
+      top: -10%;
+    }
   }
 
   input {
@@ -939,6 +995,11 @@ header {
     border: 2px solid #000;
     border-radius: 10px;
     margin: 2% auto;
+
+    @include mq(sp) {
+      width: 50%;
+      margin: 5% auto;
+    }
   }
   textarea {
     display: block;
@@ -948,11 +1009,20 @@ header {
     border: 2px solid #000;
     border-radius: 10px;
     margin: 2% auto;
+
+    @include mq(sp) {
+      width: 50%;
+      margin: 5% auto;
+    }
   }
 
   .submit-button {
     background: #fff;
     width: 10%;
+
+    @include mq(sp) {
+      width: 30%;
+    }
 
     &:hover {
       background: $blue-box;
@@ -972,7 +1042,7 @@ footer {
   .copy-right {
     text-align: center;
     font-size: 0.75rem;
-    margin: -1.5rem;
+    margin: -1.5rem auto;
     width: 100%;
   }
   .footer-inner {
@@ -985,6 +1055,10 @@ footer {
         position: absolute;
         top: 1rem;
         left: 10px;
+
+        @include mq(sp) {
+          width: 20%;
+        }
       }
     }
 
@@ -992,16 +1066,29 @@ footer {
       width: 25%;
       margin-top: 1rem;
       height: 135px;
+
+      @include mq(sp) {
+        width: 40%;
+      }
       p {
         font-size: 1rem;
         font-style: normal;
         font-weight: 400;
         letter-spacing: 4.8px;
         line-height: 1.5rem;
+
+        @include mq(sp) {
+          font-size: 0.75rem;
+          letter-spacing: normal;
+        }
       }
 
       .footer-access {
         margin-bottom: 26px;
+
+        @include mq(sp) {
+          margin-bottom: 5%;
+        }
       }
     }
   }
