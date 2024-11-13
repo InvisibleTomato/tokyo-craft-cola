@@ -547,6 +547,10 @@ header {
   height: 800px;
   position: relative;
 
+  @include mq(tab) {
+    height: 700px;
+  }
+
   .contact-bubble1 {
     width: 20%;
     position: absolute;

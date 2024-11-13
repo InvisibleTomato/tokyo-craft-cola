@@ -483,6 +483,11 @@ header {
   height: 800px;
   position: relative;
 }
+@media screen and (max-width: 1024px) {
+  #contact {
+    height: 700px;
+  }
+}
 #contact .contact-bubble1 {
   width: 20%;
   position: absolute;
