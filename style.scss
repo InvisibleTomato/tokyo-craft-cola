@@ -75,6 +75,10 @@ html {
   text-align: center;
   padding: 1%;
   margin: 0 auto;
+
+  @include mq(sp) {
+    font-size: 1.15rem;
+  }
 }
 
 //header
@@ -414,8 +418,9 @@ header {
   position: relative;
   height: 1000px;
   padding-top: 5%;
-
+  overflow: hidden;
   @include mq(sp) {
+    height: 600px;
   }
 
   .yellow-box4 {
@@ -426,6 +431,12 @@ header {
     left: 5%;
     background: $yellow-box;
     border-radius: 10px;
+
+    @include mq(sp) {
+      height: 10%;
+      top: 1%;
+      left: 40%;
+    }
   }
 
   .yellow-box5 {
@@ -441,6 +452,13 @@ header {
       height: 15%;
       top: 87%;
     }
+
+    @include mq(sp) {
+      width: 60%;
+      height: 12%;
+      top: 75%;
+      right: 40%;
+    }
   }
 
   .cola-3 {
@@ -450,6 +468,11 @@ header {
     position: absolute;
     top: 10%;
     left: 0%;
+
+    @include mq(sp) {
+      top: 5%;
+      left: 50%;
+    }
   }
   .about-orange {
     width: 20%;
@@ -459,6 +482,10 @@ header {
     left: 0%;
     overflow: hidden;
     z-index: -10;
+
+    @include mq(sp) {
+      top: -5%;
+    }
   }
 
   .about-bubble {
@@ -468,6 +495,12 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -10;
+
+    @include mq(sp) {
+      top: 80%;
+      width: 50%;
+      transform: translate(20%, -50%);
+    }
   }
 
   .about-spice {
@@ -477,6 +510,12 @@ header {
     position: absolute;
     top: 80%;
     right: 0%;
+
+    @include mq(sp) {
+      width: 55%;
+      top: 70%;
+      right: 45%;
+    }
   }
 
   .about-us {
@@ -486,6 +525,13 @@ header {
     top: -10%;
     right: 0;
     z-index: -10;
+
+    @include mq(sp) {
+      width: 40%;
+      top: 20%;
+      right: 63%;
+      transform: rotate(-30deg);
+    }
   }
 
   .about-title {
@@ -499,6 +545,14 @@ header {
 
     @include mq(tab) {
       width: 38%;
+    }
+
+    @include mq(sp) {
+      top: 35%;
+      right: 0%;
+      width: 45%;
+      padding: 3%;
+      transform: translate(-50%, -50%);
     }
   }
 
@@ -521,6 +575,16 @@ header {
       top: 30%;
       right: 9%;
     }
+
+    @include mq(sp) {
+      font-size: 0.9rem;
+      width: 50%;
+      line-height: 1.25rem;
+      letter-spacing: 0.4rem;
+      top: 54%;
+      right: 0%;
+      transform: translate(-50%, -50%);
+    }
   }
 }
 
@@ -533,7 +597,17 @@ header {
   margin-top: 15%;
 
   @include mq(sp) {
+    // overflow: hidden;
+    height: 1500px;
   }
+
+  .lineup-title {
+    @include mq(sp) {
+      width: 30%;
+      padding: 3%;
+    }
+  }
+
   .lineup-bubble {
     width: 40%;
     position: absolute;
@@ -541,30 +615,58 @@ header {
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: -10;
+
+    @include mq(sp) {
+      width: 50%;
+      top: 5%;
+      left: -10%;
+      transform: scaleX(-1); /* 左右反転 */
+    }
   }
-  .about-lemon {
+  .lineup-lemon {
     width: 15%;
     z-index: -10;
     position: absolute;
     top: 5%;
     right: 0;
+
+    @include mq(sp) {
+      width: 25%;
+      top: 0;
+    }
   }
   .line-up {
     width: 30%;
     position: absolute;
     left: 0;
     top: -15%;
+
+    @include mq(sp) {
+      width: 40%;
+      top: -5%;
+    }
   }
 
   .lineup-wrapper {
     display: flex;
     justify-content: space-around;
     margin-top: 10%;
+
+    @include mq(sp) {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+    }
     .lineup-1 {
       width: 20%;
 
       @include mq(tab) {
         width: 25%;
+      }
+
+      @include mq(sp) {
+        width: 80%;
+        margin: 20% auto;
       }
 
       img {
@@ -578,6 +680,11 @@ header {
         font-weight: 400;
         line-height: normal;
         padding: 5% 0;
+
+        @include mq(sp) {
+          font-size: 1rem;
+          padding: 5% 0 0 0;
+        }
       }
       p {
         color: #350b03;
@@ -592,6 +699,11 @@ header {
         @include mq(tab) {
           line-height: 1.5rem;
           height: 20%;
+        }
+
+        @include mq(sp) {
+          font-size: 0.75rem;
+          padding: 5% 0;
         }
       }
     }
@@ -603,6 +715,11 @@ header {
         width: 25%;
       }
 
+      @include mq(sp) {
+        width: 80%;
+        margin: 20% auto;
+      }
+
       img {
         width: 100%;
       }
@@ -614,6 +731,11 @@ header {
         font-weight: 400;
         line-height: normal;
         padding: 5% 0;
+
+        @include mq(sp) {
+          font-size: 1rem;
+          padding: 5% 0 0 0;
+        }
       }
 
       p {
@@ -630,6 +752,11 @@ header {
           line-height: 1.5rem;
           height: 20%;
         }
+
+        @include mq(sp) {
+          font-size: 0.75rem;
+          padding: 5% 0;
+        }
       }
     }
 
@@ -638,6 +765,11 @@ header {
 
       @include mq(tab) {
         width: 25%;
+      }
+
+      @include mq(sp) {
+        width: 80%;
+        margin: 20% auto;
       }
 
       img {
@@ -651,6 +783,11 @@ header {
         font-weight: 400;
         line-height: normal;
         padding: 5% 0;
+
+        @include mq(sp) {
+          font-size: 1rem;
+          padding: 5% 0 0 0;
+        }
       }
       p {
         color: #350b03;
@@ -665,6 +802,11 @@ header {
         @include mq(tab) {
           line-height: 1.5rem;
           height: 20%;
+        }
+
+        @include mq(sp) {
+          font-size: 0.75rem;
+          padding: 5% 0;
         }
       }
     }
