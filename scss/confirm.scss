@@ -14,8 +14,9 @@
   }
 
   @include mq(sp) {
-    height: 110vh;
-    padding-top: 35% 0;
+    height: 120vh;
+
+    margin-top: 30%;
   }
 
   .contact-title {
@@ -37,6 +38,8 @@
     }
 
     @include mq(sp) {
+      width: 80%;
+
       margin: 15% auto;
     }
     p {
@@ -51,6 +54,10 @@
       width: 70%;
       margin: 0 30% 0 12%;
       font-size: 1.25rem;
+
+      @include mq(sp) {
+        font-size: 1rem;
+      }
     }
 
     .confirm-content-title {
@@ -60,6 +67,11 @@
       @include mq(tab) {
         width: 40%;
         font-size: 1.4rem;
+      }
+
+      @include mq(sp) {
+        width: 50%;
+        font-size: 1.25rem;
       }
     }
 

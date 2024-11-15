@@ -1220,8 +1220,8 @@ footer .footer-inner .footer-right .footer-access {
 }
 @media screen and (max-width: 720px) {
   #contact {
-    height: 110vh;
-    padding-top: 35% 0;
+    height: 120vh;
+    margin-top: 30%;
   }
 }
 #contact .contact-title {
@@ -1244,6 +1244,7 @@ footer .footer-inner .footer-right .footer-access {
 }
 @media screen and (max-width: 720px) {
   #contact .contact-confirm {
+    width: 80%;
     margin: 15% auto;
   }
 }
@@ -1259,6 +1260,11 @@ footer .footer-inner .footer-right .footer-access {
   margin: 0 30% 0 12%;
   font-size: 1.25rem;
 }
+@media screen and (max-width: 720px) {
+  #contact .contact-confirm .confirm-content {
+    font-size: 1rem;
+  }
+}
 #contact .contact-confirm .confirm-content-title {
   width: 30%;
   margin: 0 30% 0 10%;
@@ -1267,6 +1273,12 @@ footer .footer-inner .footer-right .footer-access {
   #contact .contact-confirm .confirm-content-title {
     width: 40%;
     font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  #contact .contact-confirm .confirm-content-title {
+    width: 50%;
+    font-size: 1.25rem;
   }
 }
 #contact .contact-confirm .content {
