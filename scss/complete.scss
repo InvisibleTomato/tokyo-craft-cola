@@ -1,0 +1,29 @@
+@import "style.scss";
+
+#contact {
+  padding: 5% 0;
+  text-align: center;
+
+  p {
+    font-size: 1.5rem;
+    margin: 2% auto;
+    font-family: "Noto Sans JP";
+  }
+
+  .submit-button {
+    display: block;
+    margin: 3% auto;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background-color: $yellow-box;
+    border: none;
+    border-radius: 5px;
+    font-family: "Noto Sans JP";
+
+    &:hover {
+      background-color: $blue-box;
+      color: #fff;
+    }
+  }
+}

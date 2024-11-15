@@ -1,0 +1,146 @@
+@import "style.scss";
+
+// * {
+//   outline: 1px solid magenta;
+// }
+
+#contact {
+  padding: 5% 0;
+  text-align: start;
+
+  @include mq(tab) {
+    height: 100vh;
+    margin-top: 30%;
+  }
+
+  @include mq(sp) {
+    height: 110vh;
+    padding-top: 35% 0;
+  }
+
+  .contact-title {
+    margin-bottom: 10%;
+  }
+
+  .contact-confirm {
+    border: 1px solid $text-color;
+    padding: 2%;
+    border-radius: 10px;
+    margin: 0 auto 5% auto;
+    width: 50%;
+    font-family: "Noto Sans JP";
+    height: 500px;
+
+    @include mq(tab) {
+      width: 80%;
+      height: 600px;
+    }
+
+    @include mq(sp) {
+      margin: 15% auto;
+    }
+    p {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin: 0 auto;
+      width: 50%;
+      padding-top: 3%;
+    }
+
+    .confirm-content {
+      width: 70%;
+      margin: 0 30% 0 12%;
+      font-size: 1.25rem;
+    }
+
+    .confirm-content-title {
+      width: 30%;
+      margin: 0 30% 0 10%;
+
+      @include mq(tab) {
+        width: 40%;
+        font-size: 1.4rem;
+      }
+    }
+
+    .content {
+      height: 200px;
+    }
+  }
+
+  .submit-button {
+    display: block;
+    margin: 2% auto;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background-color: $yellow-box;
+    border: none;
+    border-radius: 5px;
+    font-family: "Noto Sans JP";
+
+    @include mq(sp) {
+      padding: 2%;
+      width: 30%;
+      margin-top: 10%;
+    }
+
+    @include mq(tab) {
+      font-size: 1.5rem;
+      margin: 5% auto;
+      padding: 2%;
+      width: 24%;
+      border-radius: 10px;
+    }
+
+    &:hover {
+      background-color: $blue-box;
+      color: #fff;
+    }
+  }
+
+  .back-button {
+    display: block;
+    margin: 0 auto;
+    padding: 0.5%;
+    width: 10%;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid $text-color;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Noto Sans JP";
+
+    @include mq(tab) {
+      width: 15%;
+      padding: 1%;
+    }
+
+    @include mq(sp) {
+      width: 20%;
+    }
+
+    &:hover {
+      background-color: #000000;
+      opacity: 0.7;
+      color: #fff;
+    }
+  }
+}
+
+footer {
+  margin: 0 auto;
+  height: 100px;
+  .copy-right {
+    padding-top: 5%;
+
+    @include mq(tab) {
+      padding-top: 7%;
+    }
+
+    @include mq(sp) {
+      padding-top: 15%;
+    }
+  }
+}
