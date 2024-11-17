@@ -13,6 +13,9 @@ $content = isset($_POST['content']) ? htmlspecialchars($_POST['content'], ENT_QU
     <link rel="stylesheet" href="../src/css/reset.css" />
     <link rel="stylesheet" href="../src/css/confirm.css" />
     <title>お問い合わせ内容確認</title>
+
+
+    
 </head>
 <body>
     <!-- header -->
@@ -37,7 +40,7 @@ $content = isset($_POST['content']) ? htmlspecialchars($_POST['content'], ENT_QU
             <p class="confirm-content-title">【お問い合わせ内容】</p>
             <p class="confirm-content content"><?php echo nl2br($content); ?></p>
         </div>
-        <form action="php/complete.php" method="post">
+        <form action="complete.php" method="post">
             <input type="hidden" name="name" value="<?php echo $name; ?>">
             <input type="hidden" name="email1" value="<?php echo $email; ?>">
             <input type="hidden" name="content" value="<?php echo $content; ?>">

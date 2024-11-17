@@ -1,18 +1,32 @@
+@import "../src/css/style.css";
 @import "style.scss";
+
+// * {
+//   outline: 1px solid magenta;
+// }
 
 #contact {
   padding: 5% 0;
-  text-align: center;
+  text-align: start;
 
-  p {
-    font-size: 1.5rem;
-    margin: 2% auto;
-    font-family: "Noto Sans JP";
+  @include mq(tab) {
+    height: 100vh;
+    margin-top: 30%;
   }
 
+  @include mq(sp) {
+    height: 120vh;
+
+    margin-top: 30%;
+  }
+  .complete-message {
+    text-align: center;
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
   .submit-button {
     display: block;
-    margin: 3% auto;
+    margin: 2% auto;
     padding: 1%;
     width: 20%;
     cursor: pointer;
@@ -21,9 +35,39 @@
     border-radius: 5px;
     font-family: "Noto Sans JP";
 
+    @include mq(sp) {
+      padding: 2%;
+      width: 30%;
+      margin-top: 10%;
+    }
+
+    @include mq(tab) {
+      font-size: 1.5rem;
+      margin: 5% auto;
+      padding: 2%;
+      width: 24%;
+      border-radius: 10px;
+    }
+
     &:hover {
       background-color: $blue-box;
       color: #fff;
+    }
+  }
+}
+
+footer {
+  margin: 0 auto;
+  height: 100px;
+  .copy-right {
+    padding-top: 5%;
+
+    @include mq(tab) {
+      padding-top: 7%;
+    }
+
+    @include mq(sp) {
+      padding-top: 15%;
     }
   }
 }
