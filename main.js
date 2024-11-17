@@ -72,3 +72,24 @@ PcMenuLinks.forEach((link) => {
     }
   });
 });
+
+// スクロールに合わせてふわっと表示
+document.addEventListener("DOMContentLoaded", () => {
+  const fadeInElements = document.querySelectorAll(".fade-in");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target); // 一度表示したら監視を解除
+        }
+      });
+    },
+    {
+      threshold: 0.1, // 10% 見えたらアニメーション開始
+    }
+  );
+
+  fadeInElements.forEach((el) => observer.observe(el));
+});
