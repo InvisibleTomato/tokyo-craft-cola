@@ -333,6 +333,10 @@ header {
       width: 80%;
       right: -20%;
     }
+
+    @include mq(tab) {
+      width: 45%;
+    }
   }
 
   .yellow-box1 {
@@ -367,16 +371,17 @@ header {
   }
   .yellow-box3 {
     width: 40%;
-    height: 10%;
+    height: 12%;
     border-radius: 10px 0 0 10px;
     background: #ffee62;
     overflow: hidden;
     position: absolute;
     right: 0;
-    top: 62%;
+    top: 66%;
 
     @include mq(tab) {
-      top: 50%;
+      height: 14%;
+      top: 46%;
     }
 
     @include mq(sp) {

@@ -284,6 +284,11 @@ header {
     right: -20%;
   }
 }
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  .top-main .store-img {
+    width: 45%;
+  }
+}
 .top-main .yellow-box1 {
   width: 46%;
   height: 10%;
@@ -318,17 +323,18 @@ header {
 }
 .top-main .yellow-box3 {
   width: 40%;
-  height: 10%;
+  height: 12%;
   border-radius: 10px 0 0 10px;
   background: #ffee62;
   overflow: hidden;
   position: absolute;
   right: 0;
-  top: 62%;
+  top: 66%;
 }
 @media screen and (min-width: 721px) and (max-width: 1024px) {
   .top-main .yellow-box3 {
-    top: 50%;
+    height: 14%;
+    top: 46%;
   }
 }
 @media screen and (max-width: 720px) {
