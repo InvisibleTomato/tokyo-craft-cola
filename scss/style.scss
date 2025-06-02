@@ -92,6 +92,12 @@ html {
   opacity: 1;
 }
 
+//container
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
 //header
 header {
   position: fixed;
@@ -284,10 +290,10 @@ header {
   height: 1124px;
   position: relative;
   padding-top: 100px;
-  overflow: hidden;
 
   @include mq(sp) {
     height: 700px;
+    overflow: hidden;
   }
   .cola-1 {
     width: 30%;
@@ -360,7 +366,7 @@ header {
     transform: rotate(90deg);
     border-radius: 10px 10px 0 0;
     background: #ffee62;
-    overflow: hidden;
+
     position: absolute;
     top: 34%;
     left: -20%;
@@ -374,7 +380,7 @@ header {
     height: 12%;
     border-radius: 10px 0 0 10px;
     background: #ffee62;
-    overflow: hidden;
+
     position: absolute;
     right: 0;
     top: 66%;
@@ -494,7 +500,7 @@ header {
   .cola-3 {
     width: 50%;
     height: auto;
-    overflow: hidden;
+
     position: absolute;
     top: 10%;
     left: 0%;
@@ -510,7 +516,7 @@ header {
     position: absolute;
     top: -15%;
     left: 0%;
-    overflow: hidden;
+
     z-index: -10;
 
     @include mq(sp) {
@@ -536,7 +542,7 @@ header {
   .about-spice {
     width: 45%;
     height: auto;
-    overflow: hidden;
+
     position: absolute;
     top: 80%;
     right: 0%;
@@ -578,7 +584,7 @@ header {
     position: absolute;
     top: 20%;
     right: 0;
-    overflow: hidden;
+
     margin: 0;
 
     @include mq(tab) {
@@ -641,7 +647,6 @@ header {
     padding-top: 20%;
   }
   @include mq(sp) {
-    // overflow: hidden;
     height: 1500px;
     padding-top: 20%;
   }
