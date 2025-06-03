@@ -311,13 +311,6 @@ h2 {
   line-height: nomal;
   font-family: "Kaisei Tokumin";
   letter-spacing: 1.5rem;
-
-  @include mq(sp) {
-    font-size: 3rem;
-    background: #fff;
-    padding: 1rem;
-    border-radius: 7px;
-  }
 }
 
 .main-title-wrapper {

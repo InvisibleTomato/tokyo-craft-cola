@@ -255,14 +255,6 @@ h2 {
   font-family: "Kaisei Tokumin";
   letter-spacing: 1.5rem;
 }
-@media screen and (max-width: 720px) {
-  h2 {
-    font-size: 3rem;
-    background: #fff;
-    padding: 1rem;
-    border-radius: 7px;
-  }
-}
 
 .main-title-wrapper {
   width: 10rem;
