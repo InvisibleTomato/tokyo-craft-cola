@@ -404,95 +404,21 @@ h2 {
 //lineup
 
 #lineup {
-  height: 800px;
   position: relative;
-  padding-top: 5%;
   margin-top: 15%;
 
-  @include mq(tab) {
-    height: 700px;
-    padding-top: 20%;
-  }
-  @include mq(sp) {
-    height: 1500px;
-    padding-top: 20%;
-  }
-
-  .lineup-title {
-    @include mq(sp) {
-      width: 30%;
-      padding: 3%;
-    }
-
-    @include mq(tab) {
-      width: 25%;
-    }
-  }
-
-  .lineup-bubble {
-    width: 40%;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -10;
-
-    @include mq(sp) {
-      width: 50%;
-      top: 5%;
-      left: -10%;
-      transform: scaleX(-1); /* 左右反転 */
-    }
-  }
-  .lineup-lemon {
+  h3 {
     width: 15%;
-    z-index: -10;
-    position: absolute;
-    top: 5%;
-    right: 0;
-
-    @include mq(sp) {
-      width: 25%;
-      top: 0;
-    }
-  }
-  .line-up {
-    width: 30%;
-    position: absolute;
-    left: 0;
-    top: -15%;
-
-    @include mq(sp) {
-      width: 40%;
-      top: -5%;
-    }
-
-    @include mq(tab) {
-      width: 40%;
-    }
   }
 
   .lineup-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     margin-top: 10%;
 
-    @include mq(sp) {
-      width: 80%;
-      display: block;
-      margin: 0 auto;
-    }
     .lineup1 {
-      width: 20%;
-
-      @include mq(tab) {
-        width: 25%;
-      }
-
-      @include mq(sp) {
-        width: 80%;
-        margin: 20% auto 10% auto;
-      }
+      width: 28%;
 
       img {
         width: 100%;
@@ -505,15 +431,6 @@ h2 {
         font-weight: 400;
         line-height: normal;
         padding: 5% 0;
-
-        @include mq(sp) {
-          font-size: 1rem;
-          padding: 5% 0 0 0;
-        }
-
-        @include mq(tab) {
-          font-size: 1rem;
-        }
       }
       p {
         color: #350b03;
@@ -524,31 +441,11 @@ h2 {
         line-height: normal;
         letter-spacing: 2.24px;
         padding: 5% 0;
-
-        @include mq(tab) {
-          line-height: 1.5rem;
-          padding: 5% 0 15% 0;
-          height: 130px;
-        }
-
-        @include mq(sp) {
-          font-size: 0.75rem;
-          padding: 5% 0;
-        }
       }
     }
 
     .lineup2 {
-      width: 20%;
-
-      @include mq(tab) {
-        width: 25%;
-      }
-
-      @include mq(sp) {
-        width: 80%;
-        margin: 10% auto;
-      }
+      width: 28%;
 
       img {
         width: 100%;
@@ -561,15 +458,6 @@ h2 {
         font-weight: 400;
         line-height: normal;
         padding: 5% 0;
-
-        @include mq(sp) {
-          font-size: 1rem;
-          padding: 5% 0 0 0;
-        }
-
-        @include mq(tab) {
-          font-size: 1rem;
-        }
       }
 
       p {
@@ -581,32 +469,11 @@ h2 {
         line-height: normal;
         letter-spacing: 2.24px;
         padding: 5% 0;
-
-        @include mq(tab) {
-          line-height: 1.5rem;
-          padding: 5% 0 15% 0;
-          height: 130px;
-        }
-
-        @include mq(sp) {
-          font-size: 0.75rem;
-          padding: 5% 0;
-        }
       }
     }
 
     .lineup3 {
-      width: 20%;
-
-      @include mq(tab) {
-        width: 25%;
-      }
-
-      @include mq(sp) {
-        width: 80%;
-        margin: 10% auto;
-      }
-
+      width: 28%;
       img {
         width: 100%;
       }
@@ -618,15 +485,6 @@ h2 {
         font-weight: 400;
         line-height: normal;
         padding: 5% 0;
-
-        @include mq(sp) {
-          font-size: 1rem;
-          padding: 5% 0 0 0;
-        }
-
-        @include mq(tab) {
-          font-size: 1rem;
-        }
       }
       p {
         color: #350b03;
@@ -637,17 +495,6 @@ h2 {
         line-height: normal;
         letter-spacing: 2.24px;
         padding: 5% 0;
-
-        @include mq(tab) {
-          line-height: 1.5rem;
-          height: 130px;
-          padding: 5% 0 15% 0;
-        }
-
-        @include mq(sp) {
-          font-size: 0.75rem;
-          padding: 5% 0;
-        }
       }
     }
   }
