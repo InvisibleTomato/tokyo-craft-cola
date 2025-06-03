@@ -58,6 +58,11 @@ html {
   opacity: 1;
 }
 
+.container {
+  width: 90vw;
+  margin: 0 auto;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -230,11 +235,11 @@ header {
   height: 1124px;
   position: relative;
   padding-top: 100px;
-  overflow: hidden;
 }
 @media screen and (max-width: 720px) {
   .top-main {
     height: 700px;
+    overflow: hidden;
   }
 }
 .top-main .cola-1 {
@@ -312,7 +317,6 @@ header {
   transform: rotate(90deg);
   border-radius: 10px 10px 0 0;
   background: #ffee62;
-  overflow: hidden;
   position: absolute;
   top: 34%;
   left: -20%;
@@ -327,7 +331,6 @@ header {
   height: 12%;
   border-radius: 10px 0 0 10px;
   background: #ffee62;
-  overflow: hidden;
   position: absolute;
   right: 0;
   top: 66%;
@@ -450,7 +453,6 @@ header {
 #about .cola-3 {
   width: 50%;
   height: auto;
-  overflow: hidden;
   position: absolute;
   top: 10%;
   left: 0%;
@@ -467,7 +469,6 @@ header {
   position: absolute;
   top: -15%;
   left: 0%;
-  overflow: hidden;
   z-index: -10;
 }
 @media screen and (max-width: 720px) {
@@ -493,7 +494,6 @@ header {
 #about .about-spice {
   width: 45%;
   height: auto;
-  overflow: hidden;
   position: absolute;
   top: 80%;
   right: 0%;
@@ -537,7 +537,6 @@ header {
   position: absolute;
   top: 20%;
   right: 0;
-  overflow: hidden;
   margin: 0;
 }
 @media screen and (min-width: 721px) and (max-width: 1024px) {

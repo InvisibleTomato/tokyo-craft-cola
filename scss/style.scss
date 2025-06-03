@@ -24,6 +24,11 @@ $yellow-box: #ffee62;
 $blue-box: #2c459e;
 $text-color: #350b03;
 
+//フォントサイズ
+$copy: 48px;
+$section-title: 1.5rem;
+$text: 1rem;
+
 a {
   color: $text-color;
   text-decoration: none;
@@ -34,55 +39,29 @@ a {
   }
 }
 
-//フォントサイズ
+//フォント
 html {
   color: $text-color;
   font-family: "Noto Sans JP";
-  @include mq(pc) {
-    font-size: 1rem;
-  }
-
-  @include mq(tab) {
-    font-size: 0.875rem;
-  }
-
-  @include mq(sp) {
-    font-size: 0.75rem;
-  }
-}
-
-//nav-font
-@mixin nav-font {
-  color: #350b03;
-  font-family: "Noto Serif";
-  font-size: 22px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  flex-shrink: $text;
 }
 
 //セクションタイトル
 .section-title {
   color: #fff;
   font-family: "Josefin Sans";
-  font-size: 1.875rem;
+  font-size: $section-title;
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   line-height: normal;
   border-radius: 10px;
   background: $blue-box;
-  width: 10%;
   text-align: center;
   padding: 1%;
   margin: 0 auto;
-
-  @include mq(sp) {
-    font-size: 1.15rem;
-  }
 }
 
 // 要素をふわっと表示
-
 .fade-in {
   opacity: 0;
   transition: opacity 1s ease-out, transform 2s ease-out;
@@ -94,58 +73,43 @@ html {
 
 //container
 .container {
-  width: 90vw;
+  width: 70vw;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 //header
 header {
-  position: fixed;
   width: 100%;
   height: 100px;
   z-index: 10001;
+  position: fixed;
   top: 0;
   left: 0;
-}
-.header-inner {
-  width: 100%;
-  .header-left {
-    h1 img {
-      width: 160px;
-      position: fixed;
-      top: 10px;
-      left: 10px;
 
-      @include mq(sp) {
-        width: 100px;
+  .header-inner {
+    max-width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+      margin-top: 1rem;
+
+      img {
+        width: 10rem;
       }
     }
-  }
 
-  // pcのnav
-  .header-right {
-    nav {
-      width: 50%;
-      position: fixed;
-      right: 95px;
-      top: 35px;
+    .header-nav {
+      width: 35vw;
+      display: flex;
+      justify-content: space-around;
 
-      ul {
-        display: flex;
-        justify-content: space-between;
-
-        li {
-          color: $text-color;
-          font-family: "Noto Serif";
-          font-size: 22px;
-          font-style: normal;
-          font-weight: 400;
-          line-height: normal;
-        }
-      }
-
-      @include mq(sp) {
-        opacity: 0;
+      li {
+        font-size: 20px;
+        margin-top: 2rem;
       }
     }
   }
@@ -285,352 +249,155 @@ header {
   overflow: hidden;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: auto;
+  margin: 100px auto 0 auto;
+}
+
 //top-main
 .top-main {
-  height: 1124px;
   position: relative;
-  padding-top: 100px;
+  background-image: url("../img/cola-mask-1.png"), url("../img/cola-mask-2.png"),
+    url("../img/store1.png");
+  background-size: 60% auto, 60% auto, 50% auto;
+  background-repeat: no-repeat;
+  background-position: -40% 0, 70% 50%, 110% 50%;
 
-  @include mq(sp) {
-    height: 700px;
-    overflow: hidden;
-  }
-  .cola-1 {
-    width: 30%;
-    height: auto;
+  .box1 {
     position: absolute;
     top: 10%;
     left: 0;
-
-    @include mq(sp) {
-      width: 50%;
-    }
+    width: 10%;
+    height: 50%;
+    z-index: -1000;
+    background: $yellow-box;
+    display: inline-block;
+    border-radius: 8px;
   }
-
-  .cola-2 {
-    width: 50%;
-    height: auto;
-    position: absolute;
-    top: 45%;
-    left: 54%;
-    transform: translate(-50%, -50%);
-
-    @include mq(sp) {
-      width: 95%;
-      top: 65%;
-      left: 72%;
-      z-index: 1000;
-    }
-
-    @include mq(tab) {
-      width: 60%;
-      top: 50%;
-      left: 60%;
-    }
-  }
-  .store-img {
-    width: 40%;
-    height: auto;
-    position: absolute;
-    right: 6%;
-    top: 17%;
-
-    @include mq(sp) {
-      width: 80%;
-      right: -20%;
-    }
-
-    @include mq(tab) {
-      width: 45%;
-    }
-  }
-
-  .yellow-box1 {
-    width: 46%;
-    height: 10%;
-    border-radius: 10px 0 0 10px;
-    background: #ffee62;
-    overflow: hidden;
-    position: absolute;
-    top: 13%;
-    right: 0;
-
-    @include mq(sp) {
-      top: 15%;
-      width: 60%;
-    }
-  }
-  .yellow-box2 {
-    width: 40%;
-    height: 10%;
-    transform: rotate(90deg);
-    border-radius: 10px 10px 0 0;
-    background: #ffee62;
-
-    position: absolute;
-    top: 34%;
-    left: -20%;
-
-    @include mq(sp) {
-      top: 20%;
-    }
-  }
-  .yellow-box3 {
-    width: 40%;
-    height: 12%;
-    border-radius: 10px 0 0 10px;
-    background: #ffee62;
-
-    position: absolute;
-    right: 0;
-    top: 66%;
-
-    @include mq(tab) {
-      height: 14%;
-      top: 46%;
-    }
-
-    @include mq(sp) {
-      width: 55%;
-      height: 10%;
-      top: 60%;
-    }
-  }
-  //キャッチコピー
-  h2 {
-    writing-mode: vertical-rl; /* 縦書きに設定 */
-    color: $text-color;
-    font-size: 70px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: nomal;
-    font-family: "Kaisei Tokumin";
-    letter-spacing: 1.5rem;
-
-    @include mq(sp) {
-      font-size: 3rem;
-      background: #fff;
-      padding: 1rem;
-      border-radius: 7px;
-    }
-  }
-  .main-title {
+  .box2 {
     position: absolute;
     top: 10%;
-    left: 35%;
-
-    @include mq(sp) {
-      top: 25%;
-    }
+    right: -5%;
+    z-index: -1000;
+    width: 45%;
+    height: 15%;
+    background: $yellow-box;
+    display: inline-block;
+    border-radius: 8px;
   }
-
-  .main-title2 {
+  .box3 {
     position: absolute;
-    top: 35%;
-    left: 25%;
+    top: 75%;
+    right: -5%;
+    z-index: -1000;
+    width: 45%;
+    height: 15%;
+    background: $yellow-box;
+    display: inline-block;
+    border-radius: 8px;
+  }
+}
 
-    span {
-      background-color: $blue-box;
-      color: #fff;
-      border-radius: 10px;
-      padding: 10px;
-      padding-top: 30px;
-    }
+//キャッチコピー
+h2 {
+  writing-mode: vertical-rl; /* 縦書きに設定 */
+  color: $text-color;
+  font-size: $copy;
+  font-style: normal;
+  font-weight: 400;
+  line-height: nomal;
+  font-family: "Kaisei Tokumin";
+  letter-spacing: 1.5rem;
 
-    @include mq(sp) {
-      top: 50%;
-      left: 20%;
-    }
+  @include mq(sp) {
+    font-size: 3rem;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 7px;
+  }
+}
+
+.main-title-wrapper {
+  width: 10rem;
+  display: flex;
+  margin-top: 2%;
+  margin-left: 22%;
+  justify-content: space-between;
+}
+
+.main-title2 {
+  margin-top: 20rem;
+  span {
+    background-color: $blue-box;
+    color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 30px;
   }
 }
 
 //about
 #about {
+  margin-top: 20%;
+  margin-bottom: 20%;
+  background-image: url("../img/cola3.jpg");
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: 0 20%;
   position: relative;
-  height: 1000px;
-  padding-top: 5%;
 
-  @include mq(sp) {
-    padding-top: 10%;
-    height: 600px;
-  }
-
-  @include mq(tab) {
-    height: 800px;
-  }
-
-  .yellow-box4 {
-    width: 50%;
-    height: 30%;
-    position: absolute;
-    top: 3%;
-    left: 5%;
-    background: $yellow-box;
-    border-radius: 10px;
-
-    @include mq(sp) {
-      height: 10%;
-      top: 1%;
-      left: 40%;
-    }
-  }
-
-  .yellow-box5 {
-    width: 30%;
-    height: 20%;
-    position: absolute;
-    top: 90%;
-    right: 18%;
-    background: $yellow-box;
-    border-radius: 10px;
-
-    @include mq(tab) {
-      height: 10%;
-      top: 70%;
-    }
-
-    @include mq(sp) {
-      width: 60%;
-      height: 12%;
-      top: 75%;
-      right: 40%;
-    }
-  }
-
-  .cola-3 {
-    width: 50%;
-    height: auto;
-
-    position: absolute;
-    top: 10%;
-    left: 0%;
-
-    @include mq(sp) {
-      top: 5%;
-      left: 50%;
-    }
-  }
   .about-orange {
     width: 20%;
-    height: auto;
     position: absolute;
-    top: -15%;
-    left: 0%;
-
-    z-index: -10;
-
-    @include mq(sp) {
-      top: -5%;
-    }
+    top: -40%;
+    left: -10%;
+    z-index: -1000;
   }
-
   .about-bubble {
     width: 40%;
+    z-index: -2000;
     position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -10;
-
-    @include mq(sp) {
-      top: 80%;
-      width: 40%;
-      transform: translate(20%, -50%);
-    }
+    top: 20%;
+    left: 30%;
   }
 
-  .about-spice {
-    width: 45%;
-    height: auto;
-
+  .box4 {
     position: absolute;
-    top: 80%;
-    right: 0%;
-
-    @include mq(sp) {
-      width: 55%;
-      top: 70%;
-      right: 45%;
-    }
-
-    @include mq(tab) {
-      top: 60%;
-    }
+    top: -10%;
+    left: 0;
+    z-index: -500;
+    width: 45%;
+    height: 40%;
+    background: $yellow-box;
+    display: inline-block;
+    border-radius: 8px;
   }
 
   .about-us {
     width: 50%;
     height: auto;
-    position: absolute;
-    top: -10%;
-    right: 0;
-    z-index: -10;
-
-    @include mq(sp) {
-      width: 40%;
-      top: 20%;
-      right: 63%;
-      transform: rotate(-30deg);
-    }
-
-    @include mq(tab) {
-      top: -10%;
-    }
+    margin-left: auto;
+    display: block;
   }
 
-  .about-title {
-    padding: 1% 1% 1% 0;
-    width: 30%;
-    position: absolute;
-    top: 20%;
-    right: 0;
-
-    margin: 0;
-
-    @include mq(tab) {
-      width: 40%;
-      font-size: 1.5rem;
-    }
-
-    @include mq(sp) {
-      top: 35%;
-      right: 0%;
-      width: 45%;
-      padding: 3%;
-      transform: translate(-50%, -50%);
-    }
+  h3 {
+    width: 100%;
+    padding: 2%;
   }
 
-  .about-text {
-    width: 25%;
-    height: auto;
-    color: #350b03;
-    font-family: "Noto Sans JP";
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 144.735%; /* 28.947px */
-    letter-spacing: 8px;
-    position: absolute;
-    top: 32%;
-    right: 3%;
+  p {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 5%;
+    line-height: 1.5;
+  }
 
-    @include mq(tab) {
-      width: 35%;
-      top: 30%;
-      right: 2%;
-      font-size: 1.15rem;
-    }
-
-    @include mq(sp) {
-      font-size: 0.9rem;
-      width: 50%;
-      line-height: 1.25rem;
-      letter-spacing: 0.4rem;
-      top: 51%;
-      right: 0%;
-      transform: translate(-50%, -50%);
-    }
+  .about-text-wrapper {
+    width: 40%;
+    margin-left: auto;
   }
 }
 
@@ -715,7 +482,7 @@ header {
       display: block;
       margin: 0 auto;
     }
-    .lineup-1 {
+    .lineup1 {
       width: 20%;
 
       @include mq(tab) {
@@ -771,7 +538,7 @@ header {
       }
     }
 
-    .lineup-2 {
+    .lineup2 {
       width: 20%;
 
       @include mq(tab) {
@@ -828,7 +595,7 @@ header {
       }
     }
 
-    .lineup-3 {
+    .lineup3 {
       width: 20%;
 
       @include mq(tab) {
