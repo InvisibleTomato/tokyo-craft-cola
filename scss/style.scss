@@ -616,6 +616,11 @@ h2 {
 
 #contact {
   margin-top: 5%;
+  background-image: url("../img/bubble1.png"), url("../img/bubble2.png"),
+    url("../img/lemon.png");
+  background-size: 20% auto, 20% auto, 20% auto;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 
   h3 {
     width: 15%;
