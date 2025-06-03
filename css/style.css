@@ -550,97 +550,10 @@ h2 {
 }
 
 #contact {
-  position: relative;
-  padding-top: 5%;
   margin-top: 5%;
 }
-@media screen and (max-width: 720px) {
-  #contact .contact-title {
-    width: 40%;
-    padding: 3%;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  #contact .contact-title {
-    width: 25%;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  #contact {
-    height: 800px;
-  }
-}
-@media screen and (max-width: 720px) {
-  #contact {
-    height: 550px;
-  }
-}
-#contact .contact-bubble1 {
-  width: 20%;
-  position: absolute;
-  top: 40%;
-  left: 0;
-  transform: scaleX(-1);
-}
-@media screen and (max-width: 720px) {
-  #contact .contact-bubble1 {
-    width: 30%;
-    top: 80%;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  #contact .contact-bubble1 {
-    width: 30%;
-    top: 65%;
-  }
-}
-#contact .contact-bubble2 {
-  width: 20%;
-  position: absolute;
-  top: -20%;
-  right: 0%;
-  transform: scaleX(-1);
-}
-@media screen and (max-width: 720px) {
-  #contact .contact-bubble2 {
-    width: 30%;
-    top: 0%;
-    right: 0%;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  #contact .contact-bubble2 {
-    width: 25%;
-    top: -5%;
-  }
-}
-#contact .contact-lemon {
-  width: 20%;
-  position: absolute;
-  bottom: -10%;
-  right: 0;
-}
-@media screen and (max-width: 720px) {
-  #contact .contact-lemon {
-    bottom: -5%;
-  }
-}
-#contact .contact-png {
-  width: 30%;
-  position: absolute;
-  top: -15%;
-  left: 0;
-}
-@media screen and (max-width: 720px) {
-  #contact .contact-png {
-    width: 40%;
-    top: -10%;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  #contact .contact-png {
-    width: 40%;
-  }
+#contact h3 {
+  width: 15%;
 }
 #contact input {
   display: block;
@@ -649,12 +562,6 @@ h2 {
   border: 2px solid #000;
   border-radius: 10px;
   margin: 2% auto;
-}
-@media screen and (max-width: 720px) {
-  #contact input {
-    width: 50%;
-    margin: 5% auto;
-  }
 }
 #contact textarea {
   display: block;
@@ -665,25 +572,9 @@ h2 {
   border-radius: 10px;
   margin: 2% auto;
 }
-@media screen and (max-width: 720px) {
-  #contact textarea {
-    width: 50%;
-    margin: 5% auto;
-  }
-}
 #contact .submit-button {
   background: #fff;
   width: 10%;
-}
-@media screen and (max-width: 720px) {
-  #contact .submit-button {
-    width: 30%;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  #contact .submit-button {
-    width: 30%;
-  }
 }
 #contact .submit-button:hover {
   background: #2c459e;
@@ -693,81 +584,41 @@ h2 {
 }
 
 footer {
-  height: 150px;
+  width: 100vw;
   position: relative;
+  height: 150px;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
   background: #ffee62;
 }
 footer .copy-right {
   text-align: center;
   font-size: 0.75rem;
-  margin: -1.5rem auto;
+  margin: -0.5rem auto 0 auto;
   width: 100%;
 }
 footer .footer-inner {
+  margin: 0 15%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
-footer .footer-inner .footer-left a img {
-  width: 10%;
-  position: absolute;
-  top: 1rem;
-  left: 10px;
-}
-@media screen and (max-width: 720px) {
-  footer .footer-inner .footer-left a img {
-    width: 20%;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  footer .footer-inner .footer-left a img {
-    top: 5%;
-    left: 1%;
-  }
+footer .footer-inner .footer-left {
+  margin-top: 1rem;
 }
 footer .footer-inner .footer-right {
-  width: 25%;
+  width: 30%;
   margin-top: 1rem;
-  height: 135px;
-}
-@media screen and (max-width: 720px) {
-  footer .footer-inner .footer-right {
-    width: 40%;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  footer .footer-inner .footer-right {
-    width: 50%;
-    margin: 1% auto 0 65%;
-  }
+  height: auto;
 }
 footer .footer-inner .footer-right p {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-style: normal;
   font-weight: 400;
   letter-spacing: 4.8px;
   line-height: 1.5rem;
 }
-@media screen and (max-width: 720px) {
-  footer .footer-inner .footer-right p {
-    font-size: 0.75rem;
-    letter-spacing: normal;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  footer .footer-inner .footer-right p {
-    font-size: 0.75rem;
-  }
-}
-footer .footer-inner .footer-right .footer-access {
-  margin-bottom: 26px;
-}
-@media screen and (max-width: 720px) {
-  footer .footer-inner .footer-right .footer-access {
-    margin-bottom: 5%;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  footer .footer-inner .footer-right .footer-access {
-    margin-bottom: 3%;
-  }
+footer .footer-inner .footer-access {
+  margin-top: 0.5rem;
 }/*# sourceMappingURL=style.css.map */
