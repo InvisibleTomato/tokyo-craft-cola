@@ -428,33 +428,10 @@ h2 {
 }
 
 #access {
-  position: relative;
-  height: 800px;
-  padding-top: 5%;
   margin-top: 15%;
 }
-@media screen and (max-width: 720px) {
-  #access {
-    padding-top: 20%;
-    height: 900px;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  #access {
-    height: 1300px;
-    padding-top: 20%;
-  }
-}
-@media screen and (max-width: 720px) {
-  #access .access-title {
-    width: 40%;
-    padding: 3%;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  #access .access-title {
-    width: 25%;
-  }
+#access h3 {
+  width: 15%;
 }
 #access .access-orange {
   width: 20%;

@@ -502,30 +502,10 @@ h2 {
 
 //access
 #access {
-  position: relative;
-  height: 800px;
-  padding-top: 5%;
   margin-top: 15%;
 
-  @include mq(sp) {
-    padding-top: 20%;
-    height: 900px;
-  }
-
-  @include mq(tab) {
-    height: 1300px;
-    padding-top: 20%;
-  }
-
-  .access-title {
-    @include mq(sp) {
-      width: 40%;
-      padding: 3%;
-    }
-
-    @include mq(tab) {
-      width: 25%;
-    }
+  h3 {
+    width: 15%;
   }
 
   .access-orange {
