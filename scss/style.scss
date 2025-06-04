@@ -305,6 +305,11 @@ main {
     background-position: -80% -10%, 250% 90%, 120% 10%;
   }
 
+  @include mq(tab) {
+    background-size: 70% auto, 90% auto, 65% auto;
+    background-position: -80% -10%, 250% 90%, 120% 10%;
+  }
+
   .box1 {
     position: absolute;
     top: 10%;
@@ -317,6 +322,12 @@ main {
     border-radius: 8px;
 
     @include mq(sp) {
+      width: 15%;
+      height: 30%;
+      top: 5%;
+    }
+
+    @include mq(tab) {
       width: 15%;
       height: 30%;
       top: 5%;
@@ -339,6 +350,13 @@ main {
       height: 10%;
       top: 2%;
     }
+
+    @include mq(tab) {
+      right: 0;
+      width: 55%;
+      height: 15%;
+      top: 0%;
+    }
   }
   .box3 {
     position: absolute;
@@ -354,6 +372,13 @@ main {
     @include mq(sp) {
       right: 0;
       top: 45%;
+      height: 15%;
+      width: 55%;
+    }
+
+    @include mq(tab) {
+      right: 0;
+      top: 55%;
       height: 15%;
       width: 55%;
     }
@@ -384,6 +409,12 @@ h2 {
   justify-content: space-between;
 
   @include mq(sp) {
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+
+  @include mq(tab) {
     justify-content: space-evenly;
     margin-top: 5%;
     margin-left: 15%;

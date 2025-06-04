@@ -259,6 +259,12 @@ main {
     background-position: -80% -10%, 250% 90%, 120% 10%;
   }
 }
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  .top-main {
+    background-size: 70% auto, 90% auto, 65% auto;
+    background-position: -80% -10%, 250% 90%, 120% 10%;
+  }
+}
 .top-main .box1 {
   position: absolute;
   top: 10%;
@@ -271,6 +277,13 @@ main {
   border-radius: 8px;
 }
 @media screen and (max-width: 720px) {
+  .top-main .box1 {
+    width: 15%;
+    height: 30%;
+    top: 5%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   .top-main .box1 {
     width: 15%;
     height: 30%;
@@ -296,6 +309,14 @@ main {
     top: 2%;
   }
 }
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  .top-main .box2 {
+    right: 0;
+    width: 55%;
+    height: 15%;
+    top: 0%;
+  }
+}
 .top-main .box3 {
   position: absolute;
   top: 75%;
@@ -311,6 +332,14 @@ main {
   .top-main .box3 {
     right: 0;
     top: 45%;
+    height: 15%;
+    width: 55%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  .top-main .box3 {
+    right: 0;
+    top: 55%;
     height: 15%;
     width: 55%;
   }
@@ -340,6 +369,13 @@ h2 {
   justify-content: space-between;
 }
 @media screen and (max-width: 720px) {
+  .main-title-wrapper {
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   .main-title-wrapper {
     justify-content: space-evenly;
     margin-top: 5%;
