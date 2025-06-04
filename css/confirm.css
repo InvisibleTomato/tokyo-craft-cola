@@ -44,6 +44,12 @@ html {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 720px) {
+  .container {
+    width: 100vw;
+    margin: 0 auto;
+  }
+}
 
 header {
   width: 100%;
@@ -59,11 +65,28 @@ header .header-inner {
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 720px) {
+  header .header-inner {
+    max-width: 100%;
+    margin-left: 2%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  header .header-inner {
+    max-width: 100%;
+    margin-left: 2%;
+  }
+}
 header .header-inner .logo {
   margin-top: 1rem;
 }
 header .header-inner .logo img {
-  width: 10rem;
+  width: 90%;
+}
+@media screen and (max-width: 720px) {
+  header .header-inner .logo img {
+    width: 60%;
+  }
 }
 header .header-inner .header-nav {
   width: 35vw;
@@ -73,6 +96,16 @@ header .header-inner .header-nav {
 header .header-inner .header-nav li {
   font-size: 20px;
   margin-top: 2rem;
+}
+@media screen and (max-width: 720px) {
+  header .header-inner .header-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  header .header-inner .header-nav {
+    display: none;
+  }
 }
 
 .hamburger {
@@ -111,6 +144,11 @@ header .header-inner .header-nav li {
   transform: translateY(-6px) rotate(-45deg);
 }
 @media screen and (max-width: 720px) {
+  .hamburger {
+    display: flex;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   .hamburger {
     display: flex;
   }
@@ -331,19 +369,20 @@ h2 {
 }
 
 #lineup {
+  padding-top: 10%;
   position: relative;
-  margin-top: 15%;
+  margin-top: 5%;
   margin-bottom: 10%;
 }
 #lineup .lineup-png {
   position: absolute;
-  top: -30%;
+  top: -10%;
   left: -10%;
   width: 40%;
 }
 #lineup .lineup-lemon {
   position: absolute;
-  top: -10%;
+  top: 0;
   right: -10%;
   width: 20%;
 }
@@ -433,19 +472,20 @@ h2 {
 }
 
 #access {
-  margin-top: 20%;
+  padding-top: 10%;
+  margin-top: 10%;
   margin-bottom: 10%;
   position: relative;
 }
 #access .access-png {
   position: absolute;
-  top: -30%;
+  top: -10%;
   right: -10%;
   width: 50%;
 }
 #access .access-orange {
   position: absolute;
-  top: 0;
+  top: 15%;
   left: 0;
   width: 20%;
   z-index: -1000;
@@ -543,7 +583,7 @@ h2 {
 }
 
 #contact {
-  margin-top: 20%;
+  margin-top: 10%;
   margin-bottom: 5%;
   position: relative;
 }
@@ -627,6 +667,9 @@ footer .footer-inner {
 }
 footer .footer-inner .footer-left {
   margin-top: 1rem;
+}
+footer .footer-inner .footer-left .footer-logo {
+  width: 90%;
 }
 footer .footer-inner .footer-right {
   width: 30%;

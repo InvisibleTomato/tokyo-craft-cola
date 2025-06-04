@@ -44,6 +44,12 @@ html {
   display: flex;
   flex-direction: column;
 }
+@media screen and (max-width: 720px) {
+  .container {
+    width: 100vw;
+    margin: 0 auto;
+  }
+}
 
 header {
   width: 100%;
@@ -53,17 +59,38 @@ header {
   top: 0;
   left: 0;
 }
+@media screen and (max-width: 720px) {
+  header {
+    height: auto;
+  }
+}
 header .header-inner {
   max-width: 70vw;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
 }
+@media screen and (max-width: 720px) {
+  header .header-inner {
+    margin-left: 2%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  header .header-inner {
+    max-width: 100%;
+    margin-left: 2%;
+  }
+}
 header .header-inner .logo {
   margin-top: 1rem;
 }
 header .header-inner .logo img {
-  width: 10rem;
+  width: 90%;
+}
+@media screen and (max-width: 720px) {
+  header .header-inner .logo img {
+    width: 60%;
+  }
 }
 header .header-inner .header-nav {
   width: 35vw;
@@ -73,6 +100,16 @@ header .header-inner .header-nav {
 header .header-inner .header-nav li {
   font-size: 20px;
   margin-top: 2rem;
+}
+@media screen and (max-width: 720px) {
+  header .header-inner .header-nav {
+    display: none;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  header .header-inner .header-nav {
+    display: none;
+  }
 }
 
 .hamburger {
@@ -111,6 +148,11 @@ header .header-inner .header-nav li {
   transform: translateY(-6px) rotate(-45deg);
 }
 @media screen and (max-width: 720px) {
+  .hamburger {
+    display: flex;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   .hamburger {
     display: flex;
   }
@@ -211,6 +253,12 @@ main {
   background-repeat: no-repeat;
   background-position: -40% 0, 70% 50%, 110% 50%;
 }
+@media screen and (max-width: 720px) {
+  .top-main {
+    background-size: 70% auto, 90% auto, 65% auto;
+    background-position: -80% -10%, 250% 90%, 120% 10%;
+  }
+}
 .top-main .box1 {
   position: absolute;
   top: 10%;
@@ -221,6 +269,13 @@ main {
   background: #ffee62;
   display: inline-block;
   border-radius: 8px;
+}
+@media screen and (max-width: 720px) {
+  .top-main .box1 {
+    width: 15%;
+    height: 30%;
+    top: 5%;
+  }
 }
 .top-main .box2 {
   position: absolute;
@@ -233,6 +288,14 @@ main {
   display: inline-block;
   border-radius: 8px;
 }
+@media screen and (max-width: 720px) {
+  .top-main .box2 {
+    right: 0;
+    width: 55%;
+    height: 10%;
+    top: 2%;
+  }
+}
 .top-main .box3 {
   position: absolute;
   top: 75%;
@@ -243,6 +306,14 @@ main {
   background: #ffee62;
   display: inline-block;
   border-radius: 8px;
+}
+@media screen and (max-width: 720px) {
+  .top-main .box3 {
+    right: 0;
+    top: 45%;
+    height: 15%;
+    width: 55%;
+  }
 }
 
 h2 {
@@ -255,6 +326,11 @@ h2 {
   font-family: "Kaisei Tokumin";
   letter-spacing: 1.5rem;
 }
+@media screen and (max-width: 720px) {
+  h2 {
+    font-size: 35px;
+  }
+}
 
 .main-title-wrapper {
   width: 10rem;
@@ -263,9 +339,30 @@ h2 {
   margin-left: 24%;
   justify-content: space-between;
 }
+@media screen and (max-width: 720px) {
+  .main-title-wrapper {
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .main-title {
+    background: #fff;
+    padding: 2%;
+    border-radius: 5px;
+    margin-bottom: auto;
+  }
+}
 
 .main-title2 {
   margin-top: 20rem;
+}
+@media screen and (max-width: 720px) {
+  .main-title2 {
+    margin-top: 15rem;
+  }
 }
 .main-title2 span {
   background-color: #2c459e;
@@ -319,6 +416,11 @@ h2 {
   width: 100%;
   padding: 2%;
 }
+@media screen and (max-width: 720px) {
+  #about h3 {
+    width: 30%;
+  }
+}
 #about p {
   width: 80%;
   margin: 0 auto;
@@ -347,6 +449,11 @@ h2 {
   top: 0;
   right: -10%;
   width: 20%;
+}
+@media screen and (max-width: 720px) {
+  #lineup .lineup-lemon {
+    right: 0;
+  }
 }
 #lineup h3 {
   width: 15%;
@@ -444,6 +551,11 @@ h2 {
   top: -10%;
   right: -10%;
   width: 50%;
+}
+@media screen and (max-width: 720px) {
+  #access .access-png {
+    right: 0;
+  }
 }
 #access .access-orange {
   position: absolute;
@@ -586,6 +698,11 @@ h2 {
   width: 25%;
   transform: scaleX(-1);
 }
+@media screen and (max-width: 720px) {
+  #contact .contact-bubble1 {
+    right: 0;
+  }
+}
 #contact .contact-bubble2 {
   position: absolute;
   top: 60%;
@@ -593,11 +710,21 @@ h2 {
   width: 25%;
   transform: scaleX(-1);
 }
+@media screen and (max-width: 720px) {
+  #contact .contact-bubble2 {
+    left: 0;
+  }
+}
 #contact .contact-lemon {
   position: absolute;
   top: 90%;
   right: -10%;
   width: 20%;
+}
+@media screen and (max-width: 720px) {
+  #contact .contact-lemon {
+    right: 0;
+  }
 }
 #contact .contact-png {
   position: absolute;
@@ -629,6 +756,9 @@ footer .footer-inner {
 }
 footer .footer-inner .footer-left {
   margin-top: 1rem;
+}
+footer .footer-inner .footer-left .footer-logo {
+  width: 90%;
 }
 footer .footer-inner .footer-right {
   width: 30%;

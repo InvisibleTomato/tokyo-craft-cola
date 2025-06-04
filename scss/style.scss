@@ -77,6 +77,11 @@ html {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+
+  @include mq(sp) {
+    width: 100vw;
+    margin: 0 auto;
+  }
 }
 
 //header
@@ -88,17 +93,34 @@ header {
   top: 0;
   left: 0;
 
+  @include mq(sp) {
+    height: auto;
+  }
+
   .header-inner {
     max-width: 70vw;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
 
+    @include mq(sp) {
+      margin-left: 2%;
+    }
+    @include mq(tab) {
+      max-width: 100%;
+
+      margin-left: 2%;
+    }
+
     .logo {
       margin-top: 1rem;
 
       img {
-        width: 10rem;
+        width: 90%;
+
+        @include mq(sp) {
+          width: 60%;
+        }
       }
     }
 
@@ -110,6 +132,14 @@ header {
       li {
         font-size: 20px;
         margin-top: 2rem;
+      }
+
+      @include mq(sp) {
+        display: none;
+      }
+
+      @include mq(tab) {
+        display: none;
       }
     }
   }
@@ -157,6 +187,10 @@ header {
 
   // SPサイズでは表示
   @include mq(sp) {
+    display: flex;
+  }
+
+  @include mq(tab) {
     display: flex;
   }
 }
@@ -266,6 +300,11 @@ main {
   background-repeat: no-repeat;
   background-position: -40% 0, 70% 50%, 110% 50%;
 
+  @include mq(sp) {
+    background-size: 70% auto, 90% auto, 65% auto;
+    background-position: -80% -10%, 250% 90%, 120% 10%;
+  }
+
   .box1 {
     position: absolute;
     top: 10%;
@@ -276,6 +315,12 @@ main {
     background: $yellow-box;
     display: inline-block;
     border-radius: 8px;
+
+    @include mq(sp) {
+      width: 15%;
+      height: 30%;
+      top: 5%;
+    }
   }
   .box2 {
     position: absolute;
@@ -287,6 +332,13 @@ main {
     background: $yellow-box;
     display: inline-block;
     border-radius: 8px;
+
+    @include mq(sp) {
+      right: 0;
+      width: 55%;
+      height: 10%;
+      top: 2%;
+    }
   }
   .box3 {
     position: absolute;
@@ -298,6 +350,13 @@ main {
     background: $yellow-box;
     display: inline-block;
     border-radius: 8px;
+
+    @include mq(sp) {
+      right: 0;
+      top: 45%;
+      height: 15%;
+      width: 55%;
+    }
   }
 }
 
@@ -311,6 +370,10 @@ h2 {
   line-height: nomal;
   font-family: "Kaisei Tokumin";
   letter-spacing: 1.5rem;
+
+  @include mq(sp) {
+    font-size: 35px;
+  }
 }
 
 .main-title-wrapper {
@@ -319,10 +382,29 @@ h2 {
   margin-top: 2%;
   margin-left: 24%;
   justify-content: space-between;
+
+  @include mq(sp) {
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-left: 15%;
+  }
+}
+
+.main-title {
+  @include mq(sp) {
+    background: #fff;
+    padding: 2%;
+    border-radius: 5px;
+    margin-bottom: auto;
+  }
 }
 
 .main-title2 {
   margin-top: 20rem;
+
+  @include mq(sp) {
+    margin-top: 15rem;
+  }
   span {
     background-color: $blue-box;
     color: #fff;
@@ -379,6 +461,10 @@ h2 {
   h3 {
     width: 100%;
     padding: 2%;
+
+    @include mq(sp) {
+      width: 30%;
+    }
   }
 
   p {
@@ -414,6 +500,10 @@ h2 {
     top: 0;
     right: -10%;
     width: 20%;
+
+    @include mq(sp) {
+      right: 0;
+    }
   }
 
   h3 {
@@ -521,6 +611,10 @@ h2 {
     top: -10%;
     right: -10%;
     width: 50%;
+
+    @include mq(sp) {
+      right: 0;
+    }
   }
 
   .access-orange {
@@ -665,6 +759,10 @@ h2 {
     right: -25%;
     width: 25%;
     transform: scaleX(-1);
+
+    @include mq(sp) {
+      right: 0;
+    }
   }
   .contact-bubble2 {
     position: absolute;
@@ -672,12 +770,20 @@ h2 {
     left: -25%;
     width: 25%;
     transform: scaleX(-1);
+
+    @include mq(sp) {
+      left: 0;
+    }
   }
   .contact-lemon {
     position: absolute;
     top: 90%;
     right: -10%;
     width: 20%;
+
+    @include mq(sp) {
+      right: 0;
+    }
   }
   .contact-png {
     position: absolute;
@@ -711,6 +817,10 @@ footer {
 
     .footer-left {
       margin-top: 1rem;
+
+      .footer-logo {
+        width: 90%;
+      }
     }
 
     .footer-right {
