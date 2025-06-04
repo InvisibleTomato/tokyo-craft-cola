@@ -398,7 +398,22 @@ h2 {
 
 #lineup {
   position: relative;
-  margin-top: 5%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+
+  .lineup-png {
+    position: absolute;
+    top: -30%;
+    left: -10%;
+    width: 40%;
+  }
+
+  .lineup-lemon {
+    position: absolute;
+    top: -10%;
+    right: -10%;
+    width: 20%;
+  }
 
   h3 {
     width: 15%;
@@ -495,38 +510,27 @@ h2 {
 
 //access
 #access {
-  margin-top: 15%;
+  margin-top: 20%;
   margin-bottom: 10%;
+  position: relative;
 
-  h3 {
-    width: 15%;
+  .access-png {
+    position: absolute;
+    top: -30%;
+    right: -10%;
+    width: 50%;
   }
 
   .access-orange {
-    width: 20%;
-    height: auto;
     position: absolute;
+    top: 0;
     left: 0;
-    top: -10%;
-    z-index: -10;
+    width: 20%;
+    z-index: -1000;
   }
 
-  .access-png {
-    width: 30%;
-    height: auto;
-    position: absolute;
-    top: -20%;
-    right: 0;
-
-    @include mq(sp) {
-      top: -5%;
-      width: 40%;
-    }
-
-    @include mq(tab) {
-      width: 40%;
-      top: 0%;
-    }
+  h3 {
+    width: 15%;
   }
 
   .access-wrapper {

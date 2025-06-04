@@ -332,7 +332,20 @@ h2 {
 
 #lineup {
   position: relative;
-  margin-top: 5%;
+  margin-top: 15%;
+  margin-bottom: 10%;
+}
+#lineup .lineup-png {
+  position: absolute;
+  top: -30%;
+  left: -10%;
+  width: 40%;
+}
+#lineup .lineup-lemon {
+  position: absolute;
+  top: -10%;
+  right: -10%;
+  width: 20%;
 }
 #lineup h3 {
   width: 15%;
@@ -420,38 +433,25 @@ h2 {
 }
 
 #access {
-  margin-top: 15%;
+  margin-top: 20%;
   margin-bottom: 10%;
+  position: relative;
+}
+#access .access-png {
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 50%;
+}
+#access .access-orange {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+  z-index: -1000;
 }
 #access h3 {
   width: 15%;
-}
-#access .access-orange {
-  width: 20%;
-  height: auto;
-  position: absolute;
-  left: 0;
-  top: -10%;
-  z-index: -10;
-}
-#access .access-png {
-  width: 30%;
-  height: auto;
-  position: absolute;
-  top: -20%;
-  right: 0;
-}
-@media screen and (max-width: 720px) {
-  #access .access-png {
-    top: -5%;
-    width: 40%;
-  }
-}
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-  #access .access-png {
-    width: 40%;
-    top: 0%;
-  }
 }
 #access .access-wrapper {
   display: flex;
