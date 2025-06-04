@@ -331,19 +331,20 @@ h2 {
 }
 
 #lineup {
+  padding-top: 10%;
   position: relative;
-  margin-top: 15%;
+  margin-top: 5%;
   margin-bottom: 10%;
 }
 #lineup .lineup-png {
   position: absolute;
-  top: -30%;
+  top: -10%;
   left: -10%;
   width: 40%;
 }
 #lineup .lineup-lemon {
   position: absolute;
-  top: -10%;
+  top: 0;
   right: -10%;
   width: 20%;
 }
@@ -433,19 +434,20 @@ h2 {
 }
 
 #access {
-  margin-top: 20%;
+  padding-top: 10%;
+  margin-top: 10%;
   margin-bottom: 10%;
   position: relative;
 }
 #access .access-png {
   position: absolute;
-  top: -30%;
+  top: -10%;
   right: -10%;
   width: 50%;
 }
 #access .access-orange {
   position: absolute;
-  top: 0;
+  top: 15%;
   left: 0;
   width: 20%;
   z-index: -1000;
