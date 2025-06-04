@@ -260,7 +260,7 @@ h2 {
   width: 10rem;
   display: flex;
   margin-top: 2%;
-  margin-left: 22%;
+  margin-left: 24%;
   justify-content: space-between;
 }
 
@@ -543,11 +543,9 @@ h2 {
 }
 
 #contact {
-  margin-top: 5%;
-  background-image: url("../img/bubble1.png"), url("../img/bubble2.png"), url("../img/lemon.png");
-  background-size: 20% auto, 20% auto, 20% auto;
-  background-repeat: no-repeat;
-  background-position: 0 0;
+  margin-top: 20%;
+  margin-bottom: 5%;
+  position: relative;
 }
 #contact h3 {
   width: 15%;
@@ -578,6 +576,32 @@ h2 {
   color: #fff;
   transition: 0.3s;
   cursor: pointer;
+}
+#contact .contact-bubble1 {
+  position: absolute;
+  top: -20%;
+  right: -25%;
+  width: 25%;
+  transform: scaleX(-1);
+}
+#contact .contact-bubble2 {
+  position: absolute;
+  top: 60%;
+  left: -25%;
+  width: 25%;
+  transform: scaleX(-1);
+}
+#contact .contact-lemon {
+  position: absolute;
+  top: 90%;
+  right: -10%;
+  width: 20%;
+}
+#contact .contact-png {
+  position: absolute;
+  top: -10%;
+  left: -10%;
+  width: 40%;
 }
 
 footer {
