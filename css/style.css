@@ -28,6 +28,11 @@ html {
   padding: 1%;
   margin: 0 auto;
 }
+@media screen and (max-width: 720px) {
+  .section-title {
+    font-size: 1.25rem;
+  }
+}
 
 .fade-in {
   opacity: 0;
@@ -167,7 +172,7 @@ header .header-inner .header-nav li {
   position: fixed;
   top: 0;
   right: 0;
-  width: 70%;
+  width: 70vw;
   height: 100%;
   background-color: #ffee62;
   z-index: 10001;
@@ -370,8 +375,8 @@ h2 {
 .main-title-wrapper {
   width: 10rem;
   display: flex;
-  margin-top: 2%;
-  margin-left: 24%;
+  margin-top: 2vw;
+  margin-left: 15vw;
   justify-content: space-between;
 }
 @media screen and (max-width: 720px) {
@@ -423,44 +428,116 @@ h2 {
 }
 
 #about {
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
   background-image: url("../img/cola3.jpg");
   background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: 0 20%;
+  background-size: 25vw;
+  background-position: 0 2vw;
   position: relative;
 }
+@media screen and (max-width: 720px) {
+  #about {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-size: 50vw;
+    background-position: 0 0;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #about {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-size: 50vw;
+    background-position: 0 0;
+  }
+}
 #about .about-orange {
-  width: 20%;
+  width: 15vw;
   position: absolute;
-  top: -40%;
-  left: -10%;
+  top: -15vw;
+  left: 0;
   z-index: -1000;
 }
+@media screen and (max-width: 720px) {
+  #about .about-orange {
+    width: 30vw;
+    top: -25vw;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #about .about-orange {
+    width: 30vw;
+    top: -25vw;
+  }
+}
 #about .about-bubble {
-  width: 40%;
+  width: 25vw;
   z-index: -2000;
   position: absolute;
-  top: 20%;
-  left: 30%;
+  top: 5vw;
+  left: 25vw;
+}
+@media screen and (max-width: 720px) {
+  #about .about-bubble {
+    width: 40vw;
+    top: 95vw;
+    left: 30vw;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #about .about-bubble {
+    width: 30vw;
+    top: 85vw;
+    left: 30vw;
+  }
 }
 #about .box4 {
   position: absolute;
-  top: -10%;
+  top: -3vw;
   left: 0;
   z-index: -500;
-  width: 45%;
-  height: 40%;
+  width: 30vw;
+  height: 10vw;
   background: #ffee62;
   display: inline-block;
   border-radius: 8px;
 }
+@media screen and (max-width: 720px) {
+  #about .box4 {
+    width: 55vw;
+    height: 20vw;
+    top: -5vw;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #about .box4 {
+    width: 55vw;
+    height: 20vw;
+    top: -5vw;
+  }
+}
 #about .about-us {
-  width: 50%;
+  width: 30vw;
   height: auto;
   margin-left: auto;
   display: block;
+}
+@media screen and (max-width: 720px) {
+  #about .about-us {
+    position: absolute;
+    top: 30vw;
+    right: 0;
+    width: 55vw;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #about .about-us {
+    position: absolute;
+    top: 35vw;
+    right: 0;
+    width: 55vw;
+  }
 }
 #about h3 {
   width: 100%;
@@ -468,7 +545,12 @@ h2 {
 }
 @media screen and (max-width: 720px) {
   #about h3 {
-    width: 30%;
+    width: 70%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #about h3 {
+    width: 70%;
   }
 }
 #about p {
@@ -477,9 +559,31 @@ h2 {
   margin-top: 5%;
   line-height: 1.5;
 }
+@media screen and (max-width: 720px) {
+  #about p {
+    margin-top: 10vw;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #about p {
+    width: 70%;
+  }
+}
 #about .about-text-wrapper {
   width: 40%;
   margin-left: auto;
+}
+@media screen and (max-width: 720px) {
+  #about .about-text-wrapper {
+    margin: 50vw auto 80vw auto;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #about .about-text-wrapper {
+    margin: 60vw auto 50vw auto;
+    width: 100%;
+  }
 }
 
 #lineup {
@@ -501,6 +605,11 @@ h2 {
   width: 20%;
 }
 @media screen and (max-width: 720px) {
+  #lineup .lineup-lemon {
+    right: 0;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #lineup .lineup-lemon {
     right: 0;
   }
@@ -603,6 +712,11 @@ h2 {
   width: 50%;
 }
 @media screen and (max-width: 720px) {
+  #access .access-png {
+    right: 0;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #access .access-png {
     right: 0;
   }
@@ -753,6 +867,11 @@ h2 {
     right: 0;
   }
 }
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #contact .contact-bubble1 {
+    right: 0;
+  }
+}
 #contact .contact-bubble2 {
   position: absolute;
   top: 60%;
@@ -772,6 +891,11 @@ h2 {
   width: 20%;
 }
 @media screen and (max-width: 720px) {
+  #contact .contact-lemon {
+    right: 0;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
   #contact .contact-lemon {
     right: 0;
   }
