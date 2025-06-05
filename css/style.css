@@ -659,7 +659,7 @@ h2 {
   }
 }
 #lineup .lineup-wrapper .lineup1 {
-  width: 20vw;
+  width: 15vw;
 }
 @media screen and (max-width: 720px) {
   #lineup .lineup-wrapper .lineup1 {
@@ -695,7 +695,7 @@ h2 {
   padding: 5% 0;
 }
 #lineup .lineup-wrapper .lineup2 {
-  width: 20vw;
+  width: 15vw;
 }
 @media screen and (max-width: 720px) {
   #lineup .lineup-wrapper .lineup2 {
@@ -731,7 +731,7 @@ h2 {
   padding: 5% 0;
 }
 #lineup .lineup-wrapper .lineup3 {
-  width: 20vw;
+  width: 15vw;
 }
 @media screen and (max-width: 720px) {
   #lineup .lineup-wrapper .lineup3 {
