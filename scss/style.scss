@@ -576,7 +576,7 @@ h2 {
     }
 
     @include mq(tab) {
-      width: 70%;
+      width: 40vw;
     }
   }
 
@@ -613,7 +613,7 @@ h2 {
 //lineup
 
 #lineup {
-  padding-top: 10vw;
+  padding-top: 10%;
   position: relative;
   margin-top: 5vw;
   margin-bottom: 10vw;
@@ -660,6 +660,12 @@ h2 {
 
     @include mq(sp) {
       width: 30vw;
+      padding: 2%;
+    }
+
+    @include mq(tab) {
+      width: 15vw;
+      padding: 2%;
     }
   }
 
@@ -785,35 +791,56 @@ h2 {
 //access
 #access {
   padding-top: 10%;
-  margin-top: 10%;
-  margin-bottom: 10%;
+  margin-bottom: 30vw;
   position: relative;
+
+  @include mq(tab) {
+    margin-top: 10vw;
+  }
 
   .access-png {
     position: absolute;
-    top: -10%;
-    right: -10%;
-    width: 50%;
+    top: -5vw;
+    right: -10vw;
+    width: 30vw;
 
     @include mq(sp) {
       right: 0;
+      top: -15vw;
+      width: 55vw;
     }
 
     @include mq(tab) {
       right: 0;
+      width: 40vw;
     }
   }
 
   .access-orange {
     position: absolute;
-    top: 15%;
+    top: 5vw;
     left: 0;
-    width: 20%;
+    width: 15vw;
     z-index: -1000;
+
+    @include mq(sp) {
+      width: 40vw;
+      top: 0;
+      left: -10vw;
+    }
   }
 
   h3 {
-    width: 15%;
+    width: 10vw;
+
+    @include mq(sp) {
+      width: 30vw;
+      padding: 2%;
+    }
+    @include mq(tab) {
+      width: 15vw;
+      padding: 2%;
+    }
   }
 
   .access-wrapper {
@@ -861,6 +888,10 @@ h2 {
     .access-right {
       padding: 10% 0 0 5%;
 
+      @include mq(sp) {
+        width: 80vw;
+      }
+
       @include mq(tab) {
         padding: 10% 0 0 0;
         margin: 0 30% 0 auto;
@@ -902,12 +933,30 @@ h2 {
 //contact
 
 #contact {
-  margin-top: 10%;
-  margin-bottom: 5%;
+  margin-top: 0;
+  margin-bottom: 5vw;
   position: relative;
 
+  @include mq(sp) {
+    margin-bottom: 10vw;
+  }
+
+  @include mq(tab) {
+    margin-bottom: 5vw;
+  }
+
   h3 {
-    width: 15%;
+    width: 15vw;
+    margin-bottom: 5vw;
+
+    @include mq(sp) {
+      width: 30vw;
+      padding: 2%;
+    }
+    @include mq(tab) {
+      width: 15vw;
+      padding: 2%;
+    }
   }
 
   input {
@@ -917,6 +966,16 @@ h2 {
     border: 2px solid #000;
     border-radius: 10px;
     margin: 2% auto;
+
+    @include mq(sp) {
+      width: 60%;
+      margin: 5% auto;
+    }
+
+    @include mq(tab) {
+      width: 40%;
+      margin: 5% auto;
+    }
   }
   textarea {
     display: block;
@@ -926,65 +985,111 @@ h2 {
     border: 2px solid #000;
     border-radius: 10px;
     margin: 2% auto;
+
+    @include mq(sp) {
+      width: 60%;
+    }
+
+    @include mq(tab) {
+      width: 40%;
+      margin: 5% auto;
+    }
   }
 
   .submit-button {
     background: #fff;
     width: 10%;
 
+    @include mq(sp) {
+      width: 40%;
+    }
+
+    @include mq(tab) {
+      width: 20%;
+    }
+
     &:hover {
       background: $blue-box;
       color: #fff;
       transition: 0.3s;
       cursor: pointer;
+      border-color: transparent;
     }
   }
 
   .contact-bubble1 {
     position: absolute;
-    top: -20%;
+    top: -20vw;
     right: -10vw;
-    width: 25%;
+    width: 15vw;
     transform: scaleX(-1);
 
     @include mq(sp) {
       right: 0;
+      width: 25vw;
+      top: -15vw;
     }
 
     @include mq(tab) {
-      right: 0;
+      right: -4vw;
+      width: 25vw;
+      top: -15vw;
     }
   }
   .contact-bubble2 {
     position: absolute;
-    top: 60%;
-    left: -25%;
-    width: 25%;
+    top: 25vw;
+    left: -10vw;
+    width: 15vw;
     transform: scaleX(-1);
 
     @include mq(sp) {
       left: 0;
+      width: 25vw;
+      top: 110vw;
+    }
+
+    @include mq(tab) {
+      left: 0;
+      width: 25vw;
+      top: 50vw;
     }
   }
   .contact-lemon {
     position: absolute;
-    top: 90%;
-    right: -10%;
-    width: 20%;
+    top: 35vw;
+    right: -10vw;
+    width: 15vw;
 
     @include mq(sp) {
       right: 0;
+      width: 30vw;
+      top: 110vw;
     }
 
     @include mq(tab) {
       right: 0;
+      width: 25vw;
+      top: 60vw;
     }
   }
   .contact-png {
     position: absolute;
-    top: -10%;
-    left: -10%;
-    width: 40%;
+    top: -10vw;
+    left: -10vw;
+    width: 30vw;
+
+    @include mq(sp) {
+      width: 55vw;
+      left: 0;
+      top: -30vw;
+    }
+
+    @include mq(tab) {
+      width: 40vw;
+      left: 0;
+      top: -20vw;
+    }
   }
 }
 
@@ -992,36 +1097,84 @@ h2 {
 footer {
   width: 100vw;
   position: relative;
-  height: 150px;
+  height: 10vw;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
   background: $yellow-box;
 
+  @include mq(sp) {
+    height: 20vw;
+  }
+
+  @include mq(tab) {
+    height: 20vw;
+  }
+
   .copy-right {
     text-align: center;
     font-size: 0.75rem;
-    margin: -0.5rem auto 0 auto;
+    margin: 0 auto;
+    line-height: 3;
     width: 100%;
+
+    @include mq(sp) {
+      line-height: 2;
+    }
+
+    @include mq(tab) {
+      line-height: 0;
+      margin-top: 8vw;
+    }
   }
   .footer-inner {
     margin: 0 15%;
     display: flex;
     justify-content: space-between;
 
+    @include mq(sp) {
+      margin: 0 auto;
+    }
+
+    @include mq(tab) {
+      margin: 0 5%;
+    }
+
     .footer-left {
       margin-top: 1rem;
 
+      @include mq(sp) {
+        margin-top: 2%;
+      }
+
       .footer-logo {
         width: 90%;
+
+        @include mq(sp) {
+          width: 20vw;
+          margin: 0;
+        }
+
+        @include mq(tab) {
+          width: 15vw;
+          margin: 0;
+        }
       }
     }
 
     .footer-right {
-      width: 30%;
+      width: 20vw;
       margin-top: 1rem;
       height: auto;
+
+      @include mq(sp) {
+        display: none;
+      }
+
+      @include mq(tab) {
+        display: none;
+      }
 
       p {
         font-size: 0.85rem;
