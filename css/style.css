@@ -587,44 +587,83 @@ h2 {
 }
 
 #lineup {
-  padding-top: 10%;
+  padding-top: 10vw;
   position: relative;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-top: 5vw;
+  margin-bottom: 10vw;
 }
 #lineup .lineup-png {
   position: absolute;
-  top: -10%;
-  left: -10%;
-  width: 40%;
+  top: -5vw;
+  left: -5vw;
+  width: 25vw;
+}
+@media screen and (max-width: 720px) {
+  #lineup .lineup-png {
+    width: 55vw;
+    top: -20vw;
+    left: 5vw;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #lineup .lineup-png {
+    width: 45vw;
+    top: -15vw;
+    left: 0;
+  }
 }
 #lineup .lineup-lemon {
   position: absolute;
   top: 0;
-  right: -10%;
-  width: 20%;
+  right: -10vw;
+  width: 15vw;
 }
 @media screen and (max-width: 720px) {
   #lineup .lineup-lemon {
+    top: 5vw;
     right: 0;
+    width: 25vw;
   }
 }
 @media screen and (min-width: 721px) and (max-width: 1024px) {
   #lineup .lineup-lemon {
     right: 0;
+    width: 20vw;
   }
 }
 #lineup h3 {
-  width: 15%;
+  width: 10vw;
+}
+@media screen and (max-width: 720px) {
+  #lineup h3 {
+    width: 30vw;
+  }
 }
 #lineup .lineup-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  margin-top: 10%;
+  margin: 5vw auto 0 auto;
+}
+@media screen and (max-width: 720px) {
+  #lineup .lineup-wrapper {
+    display: block;
+    width: 100%;
+  }
 }
 #lineup .lineup-wrapper .lineup1 {
-  width: 28%;
+  width: 20vw;
+}
+@media screen and (max-width: 720px) {
+  #lineup .lineup-wrapper .lineup1 {
+    width: 60vw;
+    margin: 15vw auto;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #lineup .lineup-wrapper .lineup1 {
+    width: 25vw;
+  }
 }
 #lineup .lineup-wrapper .lineup1 img {
   width: 100%;
@@ -649,7 +688,18 @@ h2 {
   padding: 5% 0;
 }
 #lineup .lineup-wrapper .lineup2 {
-  width: 28%;
+  width: 20vw;
+}
+@media screen and (max-width: 720px) {
+  #lineup .lineup-wrapper .lineup2 {
+    width: 60vw;
+    margin: 15vw auto;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #lineup .lineup-wrapper .lineup2 {
+    width: 25vw;
+  }
 }
 #lineup .lineup-wrapper .lineup2 img {
   width: 100%;
@@ -674,7 +724,18 @@ h2 {
   padding: 5% 0;
 }
 #lineup .lineup-wrapper .lineup3 {
-  width: 28%;
+  width: 20vw;
+}
+@media screen and (max-width: 720px) {
+  #lineup .lineup-wrapper .lineup3 {
+    width: 60vw;
+    margin: 15vw auto;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+  #lineup .lineup-wrapper .lineup3 {
+    width: 25vw;
+  }
 }
 #lineup .lineup-wrapper .lineup3 img {
   width: 100%;

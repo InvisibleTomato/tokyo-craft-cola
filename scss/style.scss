@@ -613,45 +613,78 @@ h2 {
 //lineup
 
 #lineup {
-  padding-top: 10%;
+  padding-top: 10vw;
   position: relative;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-top: 5vw;
+  margin-bottom: 10vw;
 
   .lineup-png {
     position: absolute;
-    top: -10%;
-    left: -10%;
-    width: 40%;
+    top: -5vw;
+    left: -5vw;
+    width: 25vw;
+
+    @include mq(sp) {
+      width: 55vw;
+      top: -20vw;
+      left: 5vw;
+    }
+
+    @include mq(tab) {
+      width: 45vw;
+      top: -15vw;
+      left: 0;
+    }
   }
 
   .lineup-lemon {
     position: absolute;
     top: 0;
-    right: -10%;
-    width: 20%;
+    right: -10vw;
+    width: 15vw;
 
     @include mq(sp) {
+      top: 5vw;
       right: 0;
+      width: 25vw;
     }
 
     @include mq(tab) {
       right: 0;
+      width: 20vw;
     }
   }
 
   h3 {
-    width: 15%;
+    width: 10vw;
+
+    @include mq(sp) {
+      width: 30vw;
+    }
   }
 
   .lineup-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin-top: 10%;
+    margin: 5vw auto 0 auto;
+
+    @include mq(sp) {
+      display: block;
+      width: 100%;
+    }
 
     .lineup1 {
-      width: 28%;
+      width: 20vw;
+
+      @include mq(sp) {
+        width: 60vw;
+        margin: 15vw auto;
+      }
+
+      @include mq(tab) {
+        width: 25vw;
+      }
 
       img {
         width: 100%;
@@ -678,7 +711,15 @@ h2 {
     }
 
     .lineup2 {
-      width: 28%;
+      width: 20vw;
+
+      @include mq(sp) {
+        width: 60vw;
+        margin: 15vw auto;
+      }
+      @include mq(tab) {
+        width: 25vw;
+      }
 
       img {
         width: 100%;
@@ -706,7 +747,15 @@ h2 {
     }
 
     .lineup3 {
-      width: 28%;
+      width: 20vw;
+
+      @include mq(sp) {
+        width: 60vw;
+        margin: 15vw auto;
+      }
+      @include mq(tab) {
+        width: 25vw;
+      }
       img {
         width: 100%;
       }
