@@ -1046,7 +1046,7 @@ h2 {
     @include mq(sp) {
       left: 0;
       width: 25vw;
-      top: 110vw;
+      top: 100vw;
     }
 
     @include mq(tab) {
@@ -1097,15 +1097,18 @@ h2 {
 footer {
   width: 100vw;
   position: relative;
-  height: 10vw;
+  height: 15vw;
   left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
   background: $yellow-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @include mq(sp) {
-    height: 20vw;
+    height: 30vw;
   }
 
   @include mq(tab) {
@@ -1115,8 +1118,8 @@ footer {
   .copy-right {
     text-align: center;
     font-size: 0.75rem;
-    margin: 0 auto;
-    line-height: 3;
+    margin: 0 auto 0.5rem auto;
+
     width: 100%;
 
     @include mq(sp) {
@@ -1130,11 +1133,12 @@ footer {
   }
   .footer-inner {
     margin: 0 15%;
+
     display: flex;
     justify-content: space-between;
 
     @include mq(sp) {
-      margin: 0 auto;
+      margin-right: auto;
     }
 
     @include mq(tab) {
@@ -1145,7 +1149,6 @@ footer {
       margin-top: 1rem;
 
       @include mq(sp) {
-        margin-top: 2%;
       }
 
       .footer-logo {
@@ -1164,7 +1167,6 @@ footer {
     }
 
     .footer-right {
-      width: 20vw;
       margin-top: 1rem;
       height: auto;
 
